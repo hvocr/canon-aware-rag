@@ -1,7 +1,6 @@
 # Literature Notes
 
-## Paper: ConflictRAG: Detecting and Resolving Knowledge Conflicts in Retrieval-Augmented Generation
-
+## Paper: ConflictRAG
 - Link: https://arxiv.org/pdf/2605.17301
 - Problem: Retrieval-Augmented Generation (RAG) systems implicitly
   assume mutual consistency among retrieved documents. It is an
@@ -32,5 +31,26 @@
   branches with no universal hierarchy — as in fiction canon, where
   the user's specified branch determines correctness, not graph
   consistency or source credibility.
+
+
+## Paper: Narrative Knowledge Weaver (NKW) 
+- Link: https://arxiv.org/abs/2606.05724
+- Problem: Long-form narrative QA requires reasoning over evolving story
+  worlds — changing character states, causal triggers, temporal position,
+  and later consequences. Existing RAG units (chunks, entities, relations)
+  don't encode how evidence functions inside a story. Two mismatches:
+  (1) narrative evidence is functional not just locational, (2) characters
+  and relations are dynamic.
+- Method: Source-grounded framework aligning textual evidence, atomic facts,
+  canonical graph structure, entity profiles, interactions, episodes, and
+  storylines. Query-time text/graph/narrative tools with post-retrieval
+  reading skills to assemble evidence and audit actor, scope, polarity,
+  state, and temporal constraints.
+- Gap it leaves: Assumes a single coherent story world. The "canonical
+  graph structure" presumes consistency. Fails when the story world
+  fractures into parallel branches (adaptations, editions, retcons) where
+  the same character or event has incompatible facts across versions.
+  NKW handles dynamic states within one canon; we handle conflict across
+  multiple canons.
 ---
 
