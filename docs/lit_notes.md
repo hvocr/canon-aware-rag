@@ -112,4 +112,24 @@
   MAGIC still assumes one source is correct and asks which the model
   trusts. It does not address the case where multiple sources are all
   valid branches and the user selects which one to use.
+
+
+## Paper: Resolving Conflicting Evidence in Automated Fact-Checking (IJCAI 2025)
+- Link: https://www.ijcai.org/proceedings/2025/1073
+- Problem: RAG systems for fact-checking become unreliable when confronted
+  with conflicting evidence from sources of varying credibility. No prior
+  systematic evaluation of RAG under such conflicts existed.
+- Method: Introduces CONFACT, a dataset of questions paired with conflicting
+  information from various sources. Evaluates state-of-the-art RAG methods,
+  identifies vulnerabilities in resolving conflicts from media source
+  credibility differences. Investigates integrating media background
+  information into retrieval and generation stages. Shows source credibility
+  integration significantly improves conflict resolution.
+- Gap it leaves: Assumes conflicts have a credibility hierarchy — some
+  sources are more reliable than others, and the system should rank them.
+  This fails when sources are parallel valid branches with no credibility
+  hierarchy, as in fictional canon, where the novel, film, and miniseries
+  are all equally valid and the "correct" one is user-specified. Credibility-
+  ranking resolves conflict by choosing the most reliable source; canon-aware
+  retrieval preserves conflict by respecting the user's branch selection.
 ---
