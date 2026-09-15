@@ -92,4 +92,24 @@
   correct toward. Authority Bias resolves conflict by favoring facts;
   canon-aware retrieval preserves conflict by respecting user-selected
   provenance.
+
+
+## Paper: MAGIC (EMNLP 2025 Findings)
+- Link: https://aclanthology.org/2025.findings-emnlp.466/
+- Problem: Existing benchmarks for knowledge conflict in RAG have three
+  limitations: narrow focus on QA setup, heavy reliance on entity
+  substitution techniques, and restricted range of conflict types.
+  This limits our understanding of how LLMs handle conflicts.
+- Method: KG-based framework that generates varied and subtle conflicts
+  between two similar yet distinct contexts, with interpretability through
+  the explicit relational structure of KGs. Creates MAGIC benchmark.
+  Experiments show both open-source and proprietary models struggle with
+  conflict detection, especially multi-hop reasoning, and often fail to
+  pinpoint exact sources of contradictions.
+- Gap it leaves: Conflicts are synthetically generated from knowledge
+  graphs via entity manipulation. Real-world conflicts in fiction arise
+  from independent creative decisions, not entity substitution. Moreover,
+  MAGIC still assumes one source is correct and asks which the model
+  trusts. It does not address the case where multiple sources are all
+  valid branches and the user selects which one to use.
 ---
