@@ -52,5 +52,23 @@
   the same character or event has incompatible facts across versions.
   NKW handles dynamic states within one canon; we handle conflict across
   multiple canons.
+
+
+## Paper: T-GRAG
+- Link: https://dl.acm.org/doi/10.1145/3746027.3755628
+- Problem: Existing GraphRAG methods ignore temporal dynamics of knowledge,
+  leading to temporal ambiguity, time-insensitive retrieval, and semantic
+  redundancy. They treat facts as static.
+- Method: Temporal GraphRAG with five components: Temporal Knowledge Graph
+  Generator (time-stamped evolving graphs), Temporal Query Decomposition,
+  Three-layer Interactive Retriever (progressive filtering across temporal
+  subgraphs), Source Text Extractor, and LLM Generator. Introduces
+  Time-LongQA benchmark from corporate annual reports.
+- Gap it leaves: Assumes a single evolving timeline where newer facts
+  supersede older ones. This fails for canon branches — parallel,
+  non-hierarchical versions of the same story (novel vs. film vs. edition)
+  where the "correct" version depends on user specification, not recency.
+  Temporal conflicts have a resolution rule (newest wins); canon conflicts
+  have no resolution rule — the user picks the branch.
 ---
 
