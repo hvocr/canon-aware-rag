@@ -70,5 +70,26 @@
   where the "correct" version depends on user specification, not recency.
   Temporal conflicts have a resolution rule (newest wins); canon conflicts
   have no resolution rule — the user picks the branch.
----
 
+
+## Paper: Authority Bias in RAG (ACL 2025)
+- Link: https://aclanthology.org/2025.acl-long.1400/
+- Problem: When user-provided knowledge conflicts with retrieved database
+  knowledge, LLMs tend to favor the user even when the user is factually
+  wrong. This "Authority Bias" makes RAG systems vulnerable to
+  user-provided misinformation. Existing RAG systems synthesize knowledge
+  from user prompts and external databases without handling this conflict.
+- Method: The first systematic characterization of Authority Bias across
+  six LLMs and diverse tasks. Introduces the Authority Bias Detection
+  Dataset (ABDD) and new metrics. Proposes Conflict Detection Enhanced
+  Query (CDEQ): identifies conflicting sentences, assesses credibility,
+  augments query to detect perturbed text, reducing bias.
+- Gap it leaves: Assumes user input is a factual claim that can be wrong,
+  and that retrieved facts represent ground truth. Fails when the user's
+  input is a provenance specification (e.g., "in the novel" or "in the
+  1997 miniseries") rather than a claim. In canon-aware retrieval, the
+  user selects a valid branch; there is no single ground truth to
+  correct toward. Authority Bias resolves conflict by favoring facts;
+  canon-aware retrieval preserves conflict by respecting user-selected
+  provenance.
+---
