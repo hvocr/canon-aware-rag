@@ -1,5 +1,58 @@
 fact_id,work,event,branch,fact_value,conflict_type,notes
-SL-001,Salem's Lot,Kurt Barlow's appearance,SALEMS_LOT_NOVEL,Ordinary-looking human being,C4,Novel Barlow resembles a normal man
-SL-002,Salem's Lot,Kurt Barlow's appearance,SALEMS_LOT_1979,Nosferatu-like monstrous vampire,C4,1979 miniseries design
-SL-003,Salem's Lot,Kurt Barlow's appearance,SALEMS_LOT_2004,Sophisticated well-dressed older gentleman,C4,Portrayed by Rutger Hauer
-SL-004,Salem's Lot,Kurt Barlow's appearance,SALEMS_LOT_2024,Similar to 1979 Nosferatu design,C4,Portrayed by Alexander Ward
+SH-001,The Shining,Dick Hallorann's fate,SHINING_NOVEL,Survives; helps Danny and Wendy escape the Overlook,C1,Search result confirms "Dick, in the book, gets Danny and Wendy out of the hotel and drives them to safety"[reference:0]
+SH-002,The Shining,Dick Hallorann's fate,SHINING_KUBRICK,Dies; killed by Jack Torrance with a roque mallet,C1,Search result confirms "Dick suffers a grisly death"[reference:1]
+SH-003,The Shining,Dick Hallorann's fate,SHINING_1997,Survives,C1,Miniseries follows King's novel ending
+SH-004,The Shining,Room number of the haunted room,SHINING_NOVEL,Room 217,C1,Novel uses 217
+SH-005,The Shining,Room number of the haunted room,SHINING_KUBRICK,Room 237,C1,Kubrick changed to 237
+SH-006,The Shining,Jack Torrance's death,SHINING_NOVEL,Dies when the Overlook's boiler explodes,C5,Jack regains control and destroys the hotel
+SH-007,The Shining,Jack Torrance's death,SHINING_KUBRICK,Freezes to death in the hedge maze,C5,Search result confirms "Jack freezes to death in the maze"[reference:2]
+SH-008,The Shining,Jack Torrance's death,SHINING_1997,Dies when the hotel explodes,C5,"In the miniseries Jack regains control one last time to ensure the hotel goes boom"[reference:3]
+SH-009,The Shining,The Overlook Hotel's destruction,SHINING_NOVEL,Destroyed by boiler explosion,C5,
+SH-010,The Shining,The Overlook Hotel's destruction,SHINING_KUBRICK,Survives; Jack freezes in maze,C5,Hotel is not destroyed in the film
+SH-011,The Shining,The Overlook Hotel's destruction,SHINING_1997,Destroyed by explosion,C5,
+SH-012,The Shining,Jack Torrance's characterization,SHINING_NOVEL,A tragic figure; struggles with alcoholism and love for family,C4,
+SH-013,The Shining,Jack Torrance's characterization,SHINING_KUBRICK,A menacing figure; descent into madness is colder and more ambiguous,C4,
+SH-014,The Shining,Jack Torrance's characterization,SHINING_1997,Focuses heavily on alcoholism and AA methodology,C4,"Jack's struggles with alcoholism are front and center"[reference:4]
+SH-015,The Shining,Jack Torrance's hair color,SHINING_NOVEL,Blonde,C4,Novel describes Jack as blonde
+SH-016,The Shining,Jack Torrance's hair color,SHINING_1997,Brunette,C4,"Jack has brunette hair instead of blonde"[reference:5]
+SH-017,The Stand,The Kid's existence,STAND_NOVEL_1978,Absent; character does not exist,C3,"The character of 'The Kid' was edited out from the original"[reference:6]
+SH-018,The Stand,The Kid's existence,STAND_NOVEL_1990,Present; accompanies Trashcan Man,C3,"added character of The Kid, who accompanies Trashcan Man along part of his journey"[reference:7]
+SH-019,The Stand,The Kid's existence,STAND_1994,Absent,C3,Not included in 1994 miniseries
+SH-020,The Stand,The Kid's existence,STAND_2020,Absent,C3,Not included in 2020 miniseries
+SH-021,The Stand,Trashcan Man's backstory,STAND_NOVEL_1978,Shorter; journey is less detailed,C3,
+SH-022,The Stand,Trashcan Man's backstory,STAND_NOVEL_1990,Expanded; longer journey with The Kid,C3,"Trashcan Man's journey is longer in the uncut version"[reference:8]
+SH-023,The Stand,Opening chapter,STAND_NOVEL_1978,Different opening,C3,
+SH-024,The Stand,Opening chapter,STAND_NOVEL_1990,Completely different opening chapter,C3,"uncut version contains a completely different opening 'chapter'"[reference:9]
+SH-025,The Stand,Setting time period,STAND_NOVEL_1978,1970s,C2,
+SH-026,The Stand,Setting time period,STAND_NOVEL_1990,1990s,C2,"He reset the story in the 1990s"[reference:10]
+SH-027,The Stand,Setting time period,STAND_2020,Contemporary,C2,
+SH-028,The Stand,Frannie's baby's name,STAND_NOVEL,A boy named Peter,C1,"Frannie gives birth to a girl named Abagail (in the novel, a boy named Peter)"[reference:11]
+SH-029,The Stand,Frannie's baby's name,STAND_1994,A girl named Abagail,C1,"in the 1994 miniseries Fran also has a daughter she names Abagail"[reference:12]
+SH-030,The Stand,Frannie's baby's name,STAND_2020,A girl named Abagail,C1,"Frannie gives birth to a girl named Abagail"[reference:13]
+SH-031,The Stand,Randall Flagg's fate,STAND_NOVEL,Becomes a deity to a group of island inhabitants,C5,"adding a darker layer to it that had Randall Flagg become a deity to a group of island inhabitants"[reference:14]
+SH-032,The Stand,Randall Flagg's fate,STAND_2020,Returns as Russell Faraday to a remote tribe,C5,"Flagg, calling himself Russell Faraday, finds a new group of followers"[reference:15]
+SH-033,The Stand,Las Vegas climax,STAND_NOVEL,Decimation of Las Vegas and Flagg's followers,C5,
+SH-034,The Stand,Las Vegas climax,STAND_2020,Decimation of Las Vegas and Flagg's followers,C5,"sees the decimation of Las Vegas, Randall Flagg, and Flagg's followers"[reference:16]
+SH-035,The Stand,Nick Andros' death,STAND_NOVEL,Dies in explosion,C5,
+SH-036,The Stand,Nick Andros' death,STAND_1994,Dies in explosion,C5,
+SH-037,The Stand,Nadine Cross' fate,STAND_NOVEL,Dies after giving birth to Flagg's child,C5,
+SH-038,The Stand,Nadine Cross' fate,STAND_2020,Different fate,C5,
+SH-039,The Stand,Harold Lauder's fate,STAND_NOVEL,Dies in explosion,C5,
+SH-040,The Stand,Harold Lauder's fate,STAND_1994,Dies in explosion,C5,
+SL-001,Salem's Lot,Kurt Barlow's appearance,SALEMS_LOT_NOVEL,Resembles an ordinary human being,C4,"while Kurt Barlow in the novel resembled an ordinary human being" (from corpus)
+SL-002,Salem's Lot,Kurt Barlow's appearance,SALEMS_LOT_1979,Nosferatu-like monstrous vampire; blue-skinned; cannot speak,C4,"in the 1979 mini-series, he was depicted with a Nosferatu-like appearance" (from corpus); "blue skin and couldn't speak at all"[reference:17]
+SL-003,Salem's Lot,Kurt Barlow's appearance,SALEMS_LOT_2004,Sophisticated well-dressed older gentleman,C4,"Barlow was a sophisticated, well-dressed older gentleman" (from corpus); portrayed by Rutger Hauer[reference:18]
+SL-004,Salem's Lot,Kurt Barlow's appearance,SALEMS_LOT_2024,Similar to 1979 Nosferatu design,C4,"Barlow's look is similar to the 1979 miniseries" (from corpus)
+SL-005,Salem's Lot,Richard Straker's role,SALEMS_LOT_NOVEL,Main antagonist for first half; killed by Barlow,C1,"In the book, Straker is the clear antagonist for about half its length, up until he is killed by Barlow"[reference:19]
+SL-006,Salem's Lot,Richard Straker's role,SALEMS_LOT_1979,Main antagonist and more prominent villain than Barlow,C1,"In the 1979 version, Straker was the main antagonist and a more prominent villain than Barlow"[reference:20]
+SL-007,Salem's Lot,Susan Norton's fate,SALEMS_LOT_NOVEL,Becomes a vampire; destroyed by Ben and Mark,C5,
+SL-008,Salem's Lot,Susan Norton's fate,SALEMS_LOT_1979,Becomes a vampire at the very end,C5,"Susan didn't become a vampire until the very end of the film"[reference:21]
+SL-009,Salem's Lot,Father Callahan's fate,SALEMS_LOT_NOVEL,Survives encounter with Barlow but is forever changed,C5,"In the book, Callahan survives an encounter with Barlow but is forever changed"[reference:22]
+SL-010,Salem's Lot,Father Callahan's fate,SALEMS_LOT_2004,Survives; more complex arc,C5,
+SL-011,Salem's Lot,Father Callahan's fate,SALEMS_LOT_2024,Dies against Barlow,C5,"In the 2024 movie, Callahan fails against Barlow"[reference:23]
+SL-012,Salem's Lot,Ben and Mark's epilogue,SALEMS_LOT_NOVEL,Includes epilogue revealing more of Ben and Mark's story,C5,"King's 1975 novel includes an epilogue that reveals more of Ben and Mark's story"[reference:24]
+SL-013,Salem's Lot,Ben and Mark's epilogue,SALEMS_LOT_2024,Epilogue omitted,C5,"This daring epilogue was omitted from the new movie adaptation"[reference:25]
+SL-014,Salem's Lot,The Marsten House's destruction,SALEMS_LOT_NOVEL,Destroyed by fire,C5,
+SL-015,Salem's Lot,The Marsten House's destruction,SALEMS_LOT_1979,Destroyed by fire,C5,
+SL-016,Salem's Lot,The Marsten House's destruction,SALEMS_LOT_2004,Destroyed by fire,C5,
+SL-017,Salem's Lot,The Marsten House's destruction,SALEMS_LOT_2024,Different resolution,C5,"The film circles back to the location for the finale... to provide closure on its particular version of the story"[reference:26]
