@@ -1,0 +1,5 @@
+fact_id,work,event,branch,fact_value,conflict_type,notes
+SL-001,Salem's Lot,Kurt Barlow's appearance,SALEMS_LOT_NOVEL,Ordinary-looking human being,C4,Novel Barlow resembles a normal man
+SL-002,Salem's Lot,Kurt Barlow's appearance,SALEMS_LOT_1979,Nosferatu-like monstrous vampire,C4,1979 miniseries design
+SL-003,Salem's Lot,Kurt Barlow's appearance,SALEMS_LOT_2004,Sophisticated well-dressed older gentleman,C4,Portrayed by Rutger Hauer
+SL-004,Salem's Lot,Kurt Barlow's appearance,SALEMS_LOT_2024,Similar to 1979 Nosferatu design,C4,Portrayed by Alexander Ward
