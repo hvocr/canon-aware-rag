@@ -1,20 +1,46 @@
 fact_id,work,event,branch,fact_value,conflict_type,notes
 SH-001,The Shining,Dick Hallorann's fate,SHINING_NOVEL,Survives; helps Danny and Wendy escape the Overlook,C1,Confirmed in corpus
 SH-002,The Shining,Dick Hallorann's fate,SHINING_KUBRICK,Dies; killed by Jack Torrance,C1,Confirmed in corpus
-SH-004,The Shining,Room number of the haunted room,SHINING_NOVEL,Room 217,C1,Confirmed in corpus
-SH-005,The Shining,Room number of the haunted room,SHINING_KUBRICK,Room 237,C1,Confirmed in corpus
-SH-006,The Shining,Jack Torrance's death,SHINING_NOVEL,Dies when the Overlook's boiler explodes,C5,Confirmed in corpus
-SH-007,The Shining,Jack Torrance's death,SHINING_KUBRICK,Freezes to death in the hedge maze,C5,Confirmed in corpus
-SH-008,The Shining,Jack Torrance's death,SHINING_1997,Dies when the hotel explodes,C5,Confirmed in corpus
-SH-012,The Shining,Jack Torrance's characterization,SHINING_NOVEL,Tragic figure; struggles with alcoholism and love for family,C4,Confirmed in corpus
-SH-013,The Shining,Jack Torrance's characterization,SHINING_KUBRICK,Menacing figure; descent into madness is colder and more ambiguous,C4,Confirmed in corpus
-SH-018,The Stand,The Kid's existence,STAND_NOVEL_1990,Present; accompanies Trashcan Man,C3,Confirmed in corpus
-SH-022,The Stand,Trashcan Man's backstory,STAND_NOVEL_1990,Expanded; longer journey with The Kid,C3,Confirmed in corpus
-SH-026,The Stand,Setting time period,STAND_NOVEL_1990,1990s,C2,Confirmed in corpus
-SH-027,The Stand,Setting time period,STAND_2020,Contemporary,C2,Confirmed in corpus
+SH-003,The Shining,Room number of the haunted room,SHINING_NOVEL,Room 217,C1,Confirmed in corpus
+SH-004,The Shining,Room number of the haunted room,SHINING_KUBRICK,Room 237,C1,Confirmed in corpus
+SH-005,The Shining,Jack Torrance's death,SHINING_NOVEL,Dies when the Overlook's boiler explodes,C5,Confirmed in corpus
+SH-006,The Shining,Jack Torrance's death,SHINING_KUBRICK,Freezes to death in the hedge maze,C5,Confirmed in corpus
+SH-007,The Shining,Jack Torrance's death,SHINING_1997,Dies when the hotel explodes,C5,Confirmed in corpus
+SH-008,The Shining,Jack Torrance's characterization,SHINING_NOVEL,Tragic figure; struggles with alcoholism and love for family,C4,Confirmed in corpus
+SH-009,The Shining,Jack Torrance's characterization,SHINING_KUBRICK,Menacing figure; descent into madness is colder and more ambiguous,C4,Confirmed in corpus
+SH-010,The Shining,Grady daughters' relationship,SHINING_NOVEL,Sisters but not twins,C1,Confirmed in Kubrick Wikipedia page
+SH-011,The Shining,Grady daughters' relationship,SHINING_KUBRICK,Identical twins,C1,Confirmed: actresses Lisa and Louise Burns were identical twins
+SH-012,The Shining,Wendy Torrance's characterization,SHINING_NOVEL,Strong and independent woman,C4,Confirmed via King's stated intention
+SH-013,The Shining,Wendy Torrance's characterization,SHINING_KUBRICK,Meek submissive vulnerable woman,C4,Confirmed
+SH-014,The Shining,Jack Torrance's redemption,SHINING_NOVEL,Recovers sanity via Danny's intervention before dying,C5,Confirmed
+SH-015,The Shining,Jack Torrance's redemption,SHINING_KUBRICK,No redemption; dies mad in the maze,C5,Confirmed
+SH-016,The Shining,Source of Overlook's evil,SHINING_NOVEL,Hotel absorbs evil from past events that occurred there,C2,Confirmed
+SH-017,The Shining,Source of Overlook's evil,SHINING_KUBRICK,Built on a Native American burial ground,C2,Confirmed
+ST-001,The Stand,The Kid's existence,STAND_NOVEL_1990,Present; accompanies Trashcan Man,C3,Confirmed in corpus
+ST-002,The Stand,Trashcan Man's backstory,STAND_NOVEL_1990,Expanded; longer journey with The Kid,C3,Confirmed in corpus
+ST-003,The Stand,Setting time period,STAND_NOVEL_1990,1990s,C2,Confirmed in corpus
+ST-004,The Stand,Setting time period,STAND_2020,Contemporary,C2,Confirmed in corpus
+ST-005,The Stand,Rae Flowers' gender,STAND_NOVEL_1978,Male character named Ray Flowers,C4,Confirmed via 1994 Wikipedia
+ST-006,The Stand,Rae Flowers' gender,STAND_1994,Female character named Rae Flowers,C4,Confirmed
+ST-007,The Stand,Nick Andros' ghost appearance,STAND_NOVEL_1978,Appears as a ghost to guide Tom to injured Stu,C1,Confirmed via CBR article
+ST-008,The Stand,Nick Andros' ghost appearance,STAND_2020,Omitted; Tom finds Stu on his own,C1,Confirmed
+ST-009,The Stand,Ending,STAND_NOVEL_1978,Ambiguous; ends without a clear moral,C5,Confirmed via SlashFilm
+ST-010,The Stand,Ending,STAND_2020,New coda written by Stephen King; circular ending,C5,Confirmed
+SL-001,Salem's Lot,Kurt Barlow's appearance,SALEMS_LOT_NOVEL,Resembles an ordinary human being,C4,Confirmed in corpus
 SL-002,Salem's Lot,Kurt Barlow's appearance,SALEMS_LOT_1979,Nosferatu-like monstrous vampire,C4,Confirmed in corpus
 SL-003,Salem's Lot,Kurt Barlow's appearance,SALEMS_LOT_2004,Sophisticated well-dressed older gentleman,C4,Confirmed in corpus
 SL-004,Salem's Lot,Kurt Barlow's appearance,SALEMS_LOT_2024,Similar to 1979 Nosferatu design,C4,Confirmed in corpus
-SL-007,Salem's Lot,Susan Norton's fate,SALEMS_LOT_NOVEL,Becomes a vampire; destroyed by Ben,C5,Confirmed in corpus
-SL-010,Salem's Lot,Father Callahan's fate,SALEMS_LOT_2004,Survives; attacked by Ben in Detroit shelter,C5,Confirmed in corpus
-SL-012,Salem's Lot,Ben and Mark's epilogue,SALEMS_LOT_NOVEL,Includes epilogue with Ben and Mark returning a year later,C5,Confirmed in corpus
+SL-005,Salem's Lot,Susan Norton's fate,SALEMS_LOT_NOVEL,Becomes a vampire; destroyed by Ben,C5,Confirmed in corpus
+SL-006,Salem's Lot,Father Callahan's fate,SALEMS_LOT_2004,Survives; attacked by Ben in Detroit shelter,C5,Confirmed in corpus
+SL-007,Salem's Lot,Ben and Mark's epilogue,SALEMS_LOT_NOVEL,Includes epilogue with Ben and Mark returning a year later,C5,Confirmed in corpus
+SL-008,Salem's Lot,Final Barlow confrontation location,SALEMS_LOT_NOVEL,Basement of Eva Miller's boarding house,C1,Confirmed via 1979 Wikipedia
+SL-009,Salem's Lot,Final Barlow confrontation location,SALEMS_LOT_1979,Cellar of the Marsten House,C1,Confirmed
+SL-010,Salem's Lot,Susan Norton's fate,SALEMS_LOT_2004,Not destroyed by Ben; he intends to save her,C5,Confirmed via 2004 Wikipedia
+SL-011,Salem's Lot,Richard Straker's full name,SALEMS_LOT_NOVEL,Richard Throckett Straker,C4,Confirmed via Fandom Straker page
+SL-012,Salem's Lot,Richard Straker's full name,SALEMS_LOT_2004,Richard Thomas Straker,C4,Confirmed
+SL-013,Salem's Lot,Kurt Barlow's speech,SALEMS_LOT_NOVEL,Barlow speaks,C4,Confirmed via 1979 Wikipedia contrast
+SL-014,Salem's Lot,Kurt Barlow's speech,SALEMS_LOT_1979,Barlow does not speak,C4,Confirmed
+SL-015,Salem's Lot,Straker's status relative to Barlow,SALEMS_LOT_NOVEL,Subordinate familiar; dies before Barlow,C4,Confirmed via Fandom Straker page
+SL-016,Salem's Lot,Straker's status relative to Barlow,SALEMS_LOT_1979,Main antagonist; survives until the climax,C4,Confirmed
+SL-017,Salem's Lot,Father Callahan's role,SALEMS_LOT_NOVEL,Major character; themes of faith and good vs. evil,C4,Confirmed via ScreenRant
+SL-018,Salem's Lot,Father Callahan's role,SALEMS_LOT_1979,Severely reduced minor character,C4,Confirmed
