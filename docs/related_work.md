@@ -8,6 +8,19 @@ retrieved documents are mutually consistent. This assumption fails in
 practice, and a growing body of work studies how to handle conflicting
 evidence.
 
+We frame this problem as **provenance arbitration**: deciding which
+source is authoritative for a query, where authority is determined by
+the user rather than by the system. Prior work on conflict-aware RAG
+performs system-determined arbitration — it ranks sources by
+credibility (ConflictRAG, CONFACT), recency (T-GRAG), or graph
+consistency (TruthfulRAG), or adjudicates a stance and abstains under
+uncertainty (ConRAG). We study **user-determined arbitration**, where
+the user's provenance specification, not the system's ranking,
+determines the correct source. This distinction matters in
+parallel-valid canon domains, where multiple versions of the same fact
+are all legitimate and no universal authority hierarchy exists.
+
+
 **ConflictRAG** addresses inter-document conflicts — cases where retrieved
 passages contradict each other. It detects and classifies conflicts before
 generation, then resolves them by ranking source credibility using an
@@ -84,7 +97,10 @@ parallel valid branches. The user selects a branch by naming it (or by
 naming its medium), and the system's job is to respect that selection,
 not to override it with a universal credibility ranking.
 
-## The gap
+Across all prior works, arbitration is system-determined. The system
+decides which source is authoritative. We introduce user-determined
+arbitration, in which authority is specified by the user and the
+system's role is to respect that specification rather than override it.
 
 ## The gap
 
