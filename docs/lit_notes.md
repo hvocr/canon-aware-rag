@@ -132,4 +132,27 @@
   are all equally valid and the "correct" one is user-specified. Credibility-
   ranking resolves conflict by choosing the most reliable source; canon-aware
   retrieval preserves conflict by respecting the user's branch selection.
+
+
+## Paper: ConRAG
+- Link: https://scipublication.com/index.php/JACS/article/view/257/234
+- Problem: Retrieved passages can be "all relevant yet mutually inconsistent."
+  Baseline RAG merges them silently. ConRAG makes conflict explicit.
+- Method: Tags passages as Support / Refute / Irrelevant. Clusters into
+  consistent evidence groups. Computes a conflict score. When conflict is
+  high, preserves both sides in the evidence packet. Generation follows a
+  "sort-adjudicate-cite" protocol: outputs stance (Support / Refute / NEI),
+  an evidence table, and sentence-level citations. Abstains (NEI) when
+  evidence is balanced.
+- Evaluation: FEVER, SciFact (stance + evidence), ALCE (citation precision/
+  recall), RAGTruth (hallucination). All fact-checking benchmarks where a
+  ground truth exists.
+- Gap it leaves: ConRAG treats conflict as epistemic uncertainty — it
+  asks "which source is correct?" and abstains (NEI) when it can't tell.
+  This assumes a single ground truth exists even when the system can't
+  determine it. We study a domain — fiction canon — where no branch is
+  universally correct. The user's branch specification determines the
+  answer. Our ambiguous case is not "we don't know" but "the answer
+  depends on which version you mean." ConRAG resolves by adjudication;
+  we resolve by respecting user-specified provenance.
 ---
