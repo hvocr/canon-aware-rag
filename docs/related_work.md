@@ -33,6 +33,22 @@ framework that aligns textual evidence with canonical graph structure,
 entity profiles, and storylines. But NKW assumes a single coherent story
 world: its canonical graph presumes consistency within one narrative.
 
+**ConRAG** makes multi-source disagreement explicit rather than silently
+merging conflicting passages. It tags passages as Support, Refute, or
+Irrelevant, clusters them into consistent evidence groups, and computes
+a conflict score. When disagreement is high, it preserves both sides in
+the evidence packet and generates an answer with an explicit stance —
+Support, Refute, or NotEnoughInfo (NEI) — plus sentence-level citations.
+However, ConRAG still treats conflict as epistemic uncertainty: it asks
+which source is correct and abstains when it cannot determine one. This
+assumes a single ground truth exists even when the system cannot find
+it. Our setting differs. In fiction canon, no branch is universally
+correct; the novel's Barlow and the film's Barlow are both valid. The
+user's branch specification, not the system's adjudication, determines
+the answer. Where ConRAG outputs NEI for disputed evidence, canon-aware
+retrieval outputs the per-branch answers and lets the user's provenance
+selection decide.
+
 **Authority Bias in RAG** studies conflicts between user-provided
 knowledge and retrieved facts. It finds that LLMs over-trust the user and
 proposes a mitigation framework that favors retrieved facts over user
