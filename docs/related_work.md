@@ -104,16 +104,17 @@ system's role is to respect that specification rather than override it.
 
 ## The gap
 
-Prior work on conflict-aware RAG either resolves conflict by selecting a
-winner (ConflictRAG, CONFACT, T-GRAG) or makes conflict explicit while
-still adjudicating a correct stance or abstaining under uncertainty
-(ConRAG). All assume a single ground truth exists or can be determined,
-and all are evaluated on fact-checking benchmarks (FEVER, SciFact, ALCE,
-RAGTruth) where a correct answer is defined. We study a domain where no
-branch is universally correct and the user's provenance specification
-determines which answer is right. We introduce canon-aware retrieval as
-a specific instance of source-authority conflict in which the
-authoritative source is user-determined, not system-determined.
+Prior work on conflict-aware RAG performs system-determined
+arbitration: it resolves conflict by ranking sources (credibility,
+recency, graph consistency) or by adjudicating a stance and abstaining
+under uncertainty. All assume a universal authority hierarchy exists or
+can be determined, and all are evaluated on fact-checking benchmarks
+where a correct answer is defined. We study user-determined
+arbitration in parallel-valid canon domains, where no universal
+hierarchy exists and the user's provenance specification determines the
+correct answer. We introduce a provenance-annotated benchmark and
+measure how often baseline systems fail to respect user-specified
+provenance.
 
 ## Why this matters beyond fiction
 
