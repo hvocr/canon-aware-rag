@@ -86,15 +86,18 @@ not to override it with a universal credibility ranking.
 
 ## The gap
 
-No existing work evaluates whether RAG systems can respect user-specified
-provenance in domains where sources deliberately and permanently
-contradict each other. We introduce **canon-aware retrieval** as a
-specific instance of source-authority conflict in which the authoritative
-source is user-determined rather than system-determined. We treat source
-texts, editions, and adaptations as provenance-labeled canon branches,
-and we evaluate whether retrieval systems can respect user-specified
-branches and correctly surface — rather than silently merge — canon
-conflict.
+## The gap
+
+Prior work on conflict-aware RAG either resolves conflict by selecting a
+winner (ConflictRAG, CONFACT, T-GRAG) or makes conflict explicit while
+still adjudicating a correct stance or abstaining under uncertainty
+(ConRAG). All assume a single ground truth exists or can be determined,
+and all are evaluated on fact-checking benchmarks (FEVER, SciFact, ALCE,
+RAGTruth) where a correct answer is defined. We study a domain where no
+branch is universally correct and the user's provenance specification
+determines which answer is right. We introduce canon-aware retrieval as
+a specific instance of source-authority conflict in which the
+authoritative source is user-determined, not system-determined.
 
 ## Why this matters beyond fiction
 
