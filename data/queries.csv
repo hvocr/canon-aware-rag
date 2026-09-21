@@ -1,0 +1,17 @@
+query_id,query_text,query_type,conflict_type,branch_expected,ground_truth,source_fact_id,status
+Q001,Does Dick Hallorann survive in the novel The Shining?,EXPLICIT,C1,SHINING_NOVEL,Yes — he survives and helps Danny and Wendy escape,SH-001,verified
+Q002,Does Dick Hallorann die in the Kubrick film?,EXPLICIT,C1,SHINING_KUBRICK,Yes — Jack kills him with an axe,SH-002,verified
+Q003,"In the version where Jack is a loving but troubled father, does Hallorann survive?",IMPLICIT,C1,SHINING_NOVEL,Yes — he survives,SH-001,verified
+Q004,"In the version where Jack freezes in the hedge maze, does Hallorann survive?",IMPLICIT,C1,SHINING_KUBRICK,No — he is killed by Jack before the maze sequence,SH-002,verified
+Q005,Does Dick Hallorann survive The Shining?,AMBIGUOUS,C1,,Depends on branch — survives in novel and 1997 miniseries; dies in 1980 Kubrick film,SH-001,verified
+Q006,What room number does Dick Hallorann warn Danny to avoid in the novel?,EXPLICIT,C1,SHINING_NOVEL,Room 217,SH-003,verified
+Q007,What room number is haunted in the Kubrick film?,EXPLICIT,C1,SHINING_KUBRICK,Room 237,SH-004,verified
+Q008,What room number does Hallorann warn Danny about?,AMBIGUOUS,C1,,Depends on branch — Room 217 in novel; Room 237 in Kubrick film,SH-003,verified
+Q009,What type of vampire is Kurt Barlow in the novel?,EXPLICIT,C4,SALEMS_LOT_NOVEL,A Type-One Vampire,SL-001,verified
+Q010,How is Kurt Barlow depicted in the 1979 miniseries?,EXPLICIT,C4,SALEMS_LOT_1979,A Nosferatu-like monstrous vampire who does not speak,SL-002,verified
+Q011,How is Barlow portrayed in the 2004 miniseries?,EXPLICIT,C4,SALEMS_LOT_2004,A sophisticated well-dressed older gentleman,SL-003,verified
+Q012,"In the version where Barlow looks like a normal person, how does he behave?",IMPLICIT,C4,SALEMS_LOT_NOVEL,He appears human and speaks,SL-001,verified
+Q013,What does Kurt Barlow look like?,AMBIGUOUS,C4,,Depends on branch — human-looking in novel; Nosferatu in 1979; suave gentleman in 2004; Nosferatu-like in 2024,SL-001,verified
+Q014,In which edition does The Kid appear?,AMBIGUOUS,C3,,The 1990 Complete & Uncut Edition,ST-001,verified
+Q015,"In the version that restores over 300 pages, does The Kid appear?",IMPLICIT,C3,STAND_NOVEL_1990,Yes — he accompanies Trashcan Man,ST-001,verified
+Q016,Who is Danny Torrance?,CONTROL,NONE,,"Danny Torrance is the son of Jack and Wendy Torrance and the central protagonist of The Shining across all versions",SH-001,verified
