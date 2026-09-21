@@ -15,95 +15,95 @@ Q013,What does Kurt Barlow look like?,AMBIGUOUS,C4,,"Depends on branch — human
 Q014,In which edition does The Kid appear?,AMBIGUOUS,C3,,The 1990 Complete & Uncut Edition,ST-001,verified
 Q015,"In the version that restores over 300 pages, does The Kid appear?",IMPLICIT,C3,STAND_NOVEL_1990,Yes — he accompanies Trashcan Man,ST-001,verified
 Q016,Who is Danny Torrance?,CONTROL,NONE,,"Danny Torrance is the son of Jack and Wendy Torrance and the central protagonist of The Shining across all versions",SH-001,verified
-Q017,How does Jack Torrance die in the novel of The Shining?,EXPLICIT,C5,SHINING_NOVEL,Dies when the Overlook's boiler explodes,SH-005,draft
-Q018,"How does Jack die in the version where the Overlook's boiler becomes the source of the final explosion?",IMPLICIT,C5,SHINING_NOVEL,Dies when the Overlook's boiler explodes,SH-005,draft
+Q017,How does Jack Torrance die in the novel of The Shining?,EXPLICIT,C5,SHINING_NOVEL,Dies when the Overlook's boiler explodes,SH-005,verified
+Q018,"How does Jack die in the version where the Overlook's boiler becomes the source of the final explosion?",IMPLICIT,C5,SHINING_NOVEL,Dies when the Overlook's boiler explodes,SH-005,verified
 Q019,How does Jack Torrance die?,AMBIGUOUS,C5,,"SHINING_NOVEL: Dies when the Overlook's boiler explodes; SHINING_KUBRICK: Freezes to death in the hedge maze; SHINING_1997: Dies when the hotel explodes",SH-005,draft
-Q020,How does Jack Torrance die in Kubrick's adaptation?,EXPLICIT,C5,SHINING_KUBRICK,Freezes to death in the hedge maze,SH-006,draft
-Q021,"How does Jack Torrance die in the version where he is found frozen among the hedges?",IMPLICIT,C5,SHINING_KUBRICK,Freezes to death in the hedge maze,SH-006,draft
+Q020,How does Jack Torrance die in Kubrick's adaptation?,EXPLICIT,C5,SHINING_KUBRICK,Freezes to death in the hedge maze,SH-006,verified
+Q021,"How does Jack Torrance die in the version where he is found frozen among the hedges?",IMPLICIT,C5,SHINING_KUBRICK,Freezes to death in the hedge maze,SH-006,verified
 Q022,How does Jack Torrance die in the 1997 miniseries?,EXPLICIT,C5,SHINING_1997,Dies when the hotel explodes,SH-007,draft
 Q023,"How does Jack die in the version where the entire hotel explodes?",IMPLICIT,C5,SHINING_1997,Dies when the hotel explodes,SH-007,draft
-Q024,How is Jack Torrance characterized in the novel?,EXPLICIT,C4,SHINING_NOVEL,"Tragic figure; struggles with alcoholism and love for family",SH-008,draft
-Q025,How is Jack portrayed as a troubled father whose alcoholism and love for his family shape his actions?,IMPLICIT,C4,SHINING_NOVEL,"Tragic figure; struggles with alcoholism and love for family",SH-008,draft
+Q024,How is Jack Torrance characterized in the novel?,EXPLICIT,C4,SHINING_NOVEL,"Tragic figure; struggles with alcoholism and love for family",SH-008,verified
+Q025,How is Jack portrayed as a troubled father whose alcoholism and love for his family shape his actions?,IMPLICIT,C4,SHINING_NOVEL,"Tragic figure; struggles with alcoholism and love for family",SH-008,verified
 Q026,How is Jack Torrance portrayed?,AMBIGUOUS,C4,,"SHINING_NOVEL: Tragic figure; struggles with alcoholism and love for family; SHINING_KUBRICK: Menacing figure; descent into madness is colder and more ambiguous",SH-008,draft
-Q027,How is Jack Torrance characterized in Kubrick's film?,EXPLICIT,C4,SHINING_KUBRICK,"Menacing figure; descent into madness is colder and more ambiguous",SH-009,draft
-Q028,"How is Jack portrayed when his descent into madness is presented in a colder, more ambiguous way?",IMPLICIT,C4,SHINING_KUBRICK,"Menacing figure; descent into madness is colder and more ambiguous",SH-009,draft
+Q027,How is Jack Torrance characterized in Kubrick's film?,EXPLICIT,C4,SHINING_KUBRICK,"Menacing figure; descent into madness is colder and more ambiguous",SH-009,verified
+Q028,"How is Jack portrayed when his descent into madness is presented in a colder, more ambiguous way?",IMPLICIT,C4,SHINING_KUBRICK,"Menacing figure; descent into madness is colder and more ambiguous",SH-009,verified
 Q029,Are the Grady daughters sisters but not twins in the novel?,EXPLICIT,C1,SHINING_NOVEL,Sisters but not twins,SH-010,draft
 Q030,What is the relationship between the two Grady girls in the version where they are sisters without being twins?,IMPLICIT,C1,SHINING_NOVEL,Sisters but not twins,SH-010,draft
 Q031,Are the Grady daughters twins?,AMBIGUOUS,C1,,"SHINING_NOVEL: Sisters but not twins; SHINING_KUBRICK: Identical twins",SH-010,draft
-Q032,Are the Grady daughters twins in Kubrick's film?,EXPLICIT,C1,SHINING_KUBRICK,Identical twins,SH-011,draft
-Q033,What is distinctive about the Grady girls when they appear as matching identical sisters?,IMPLICIT,C1,SHINING_KUBRICK,Identical twins,SH-011,draft
-Q034,How is Wendy Torrance characterized in the novel?,EXPLICIT,C4,SHINING_NOVEL,Strong and independent woman,SH-012,draft
-Q035,How is Wendy portrayed as a woman who remains strong and independent?,IMPLICIT,C4,SHINING_NOVEL,Strong and independent woman,SH-012,draft
+Q032,Are the Grady daughters twins in Kubrick's film?,EXPLICIT,C1,SHINING_KUBRICK,Identical twins,SH-011,verified
+Q033,What is distinctive about the Grady girls when they appear as matching identical sisters?,IMPLICIT,C1,SHINING_KUBRICK,Identical twins,SH-011,verified
+Q034,How is Wendy Torrance characterized in the novel?,EXPLICIT,C4,SHINING_NOVEL,Strong and independent woman,SH-012,verified
+Q035,How is Wendy portrayed as a woman who remains strong and independent?,IMPLICIT,C4,SHINING_NOVEL,Strong and independent woman,SH-012,verified
 Q036,How is Wendy Torrance characterized?,AMBIGUOUS,C4,,"SHINING_NOVEL: Strong and independent woman; SHINING_KUBRICK: Meek submissive vulnerable woman",SH-012,draft
-Q037,How is Wendy Torrance characterized in Kubrick's film?,EXPLICIT,C4,SHINING_KUBRICK,Meek submissive vulnerable woman,SH-013,draft
-Q038,How is Wendy portrayed when she is shown as vulnerable and submissive?,IMPLICIT,C4,SHINING_KUBRICK,Meek submissive vulnerable woman,SH-013,draft
-Q039,Does Jack Torrance regain his sanity before dying in the novel?,EXPLICIT,C5,SHINING_NOVEL,Recovers sanity via Danny's intervention before dying,SH-014,draft
-Q040,"What happens to Jack when Danny reaches him and he briefly regains control before his death?",IMPLICIT,C5,SHINING_NOVEL,Recovers sanity via Danny's intervention before dying,SH-014,draft
+Q037,How is Wendy Torrance characterized in Kubrick's film?,EXPLICIT,C4,SHINING_KUBRICK,Meek submissive vulnerable woman,SH-013,verified
+Q038,How is Wendy portrayed when she is shown as vulnerable and submissive?,IMPLICIT,C4,SHINING_KUBRICK,Meek submissive vulnerable woman,SH-013,verified
+Q039,Does Jack Torrance regain his sanity before dying in the novel?,EXPLICIT,C5,SHINING_NOVEL,Recovers sanity via Danny's intervention before dying,SH-014,verified
+Q040,"What happens to Jack when Danny reaches him and he briefly regains control before his death?",IMPLICIT,C5,SHINING_NOVEL,Recovers sanity via Danny's intervention before dying,SH-014,verified
 Q041,Does Jack Torrance experience redemption before his death?,AMBIGUOUS,C5,,"SHINING_NOVEL: Recovers sanity via Danny's intervention before dying; SHINING_KUBRICK: No redemption; dies mad in the maze",SH-014,draft
 Q042,Does Jack Torrance receive redemption in Kubrick's film?,EXPLICIT,C5,SHINING_KUBRICK,No redemption; dies mad in the maze,SH-015,draft
 Q043,"What happens to Jack when he remains insane and dies lost in the maze?",IMPLICIT,C5,SHINING_KUBRICK,No redemption; dies mad in the maze,SH-015,draft
-Q044,What is the source of the Overlook's evil in the novel?,EXPLICIT,C2,SHINING_NOVEL,Hotel absorbs evil from past events that occurred there,SH-016,draft
-Q045,"How is the Overlook's evil explained when the hotel itself has absorbed the darkness of events that happened there?",IMPLICIT,C2,SHINING_NOVEL,Hotel absorbs evil from past events that occurred there,SH-016,draft
+Q044,What is the source of the Overlook's evil in the novel?,EXPLICIT,C2,SHINING_NOVEL,Hotel absorbs evil from past events that occurred there,SH-016,verified
+Q045,"How is the Overlook's evil explained when the hotel itself has absorbed the darkness of events that happened there?",IMPLICIT,C2,SHINING_NOVEL,Hotel absorbs evil from past events that occurred there,SH-016,verified
 Q046,Where does the Overlook's evil come from?,AMBIGUOUS,C2,,"SHINING_NOVEL: Hotel absorbs evil from past events that occurred there; SHINING_KUBRICK: Built on a Native American burial ground",SH-016,draft
-Q047,What is the source of the Overlook's evil in Kubrick's film?,EXPLICIT,C2,SHINING_KUBRICK,Built on a Native American burial ground,SH-017,draft
-Q048,How is the hotel's evil origin explained by the site being built over a Native American burial ground?,IMPLICIT,C2,SHINING_KUBRICK,Built on a Native American burial ground,SH-017,draft
-Q049,What is expanded about Trashcan Man's backstory in the 1990 novel?,EXPLICIT,C3,STAND_NOVEL_1990,Expanded; longer journey with The Kid,ST-002,draft
-Q050,How is Trashcan Man's story expanded through a longer journey involving The Kid?,IMPLICIT,C3,STAND_NOVEL_1990,Expanded; longer journey with The Kid,ST-002,draft
+Q047,What is the source of the Overlook's evil in Kubrick's film?,EXPLICIT,C2,SHINING_KUBRICK,Built on a Native American burial ground,SH-017,verified
+Q048,How is the hotel's evil origin explained by the site being built over a Native American burial ground?,IMPLICIT,C2,SHINING_KUBRICK,Built on a Native American burial ground,SH-017,verified
+Q049,What is expanded about Trashcan Man's backstory in the 1990 novel?,EXPLICIT,C3,STAND_NOVEL_1990,Expanded; longer journey with The Kid,ST-002,verified
+Q050,How is Trashcan Man's story expanded through a longer journey involving The Kid?,IMPLICIT,C3,STAND_NOVEL_1990,Expanded; longer journey with The Kid,ST-002,verified
 Q051,What is the extent of Trashcan Man's backstory?,AMBIGUOUS,C3,,STAND_NOVEL_1990: Expanded; longer journey with The Kid,ST-002,draft
 Q052,What time period is The Stand set in in the 1990 novel?,EXPLICIT,C2,STAND_NOVEL_1990,1990s,ST-003,draft
 Q053,What decade is depicted in the version set around the original publication-era contemporary period?,IMPLICIT,C2,STAND_NOVEL_1990,1990s,ST-003,draft
 Q054,What time period is The Stand set in?,AMBIGUOUS,C2,,"STAND_NOVEL_1990: 1990s; STAND_2020: Contemporary",ST-003,draft
 Q055,What time period is The Stand set in the 2020 adaptation?,EXPLICIT,C2,STAND_2020,Contemporary,ST-004,draft
 Q056,What period does the story depict when it is updated to the present day?,IMPLICIT,C2,STAND_2020,Contemporary,ST-004,draft
-Q057,Is Rae Flowers male or female in the 1978 novel?,EXPLICIT,C4,STAND_NOVEL_1978,Male character named Ray Flowers,ST-005,draft
-Q058,What is the gender of the character whose name is Ray Flowers in the original novel?,IMPLICIT,C4,STAND_NOVEL_1978,Male character named Ray Flowers,ST-005,draft
+Q057,Is Rae Flowers male or female in the 1978 novel?,EXPLICIT,C4,STAND_NOVEL_1978,Male character named Ray Flowers,ST-005,verified
+Q058,What is the gender of the character whose name is Ray Flowers in the original novel?,IMPLICIT,C4,STAND_NOVEL_1978,Male character named Ray Flowers,ST-005,verified
 Q059,Who is Rae Flowers?,AMBIGUOUS,C4,,"STAND_NOVEL_1978: Male character named Ray Flowers; STAND_1994: Female character named Rae Flowers",ST-005,draft
-Q060,Is Rae Flowers male or female in the 1994 miniseries?,EXPLICIT,C4,STAND_1994,Female character named Rae Flowers,ST-006,draft
-Q061,What is the gender of the character named Rae Flowers in the miniseries adaptation?,IMPLICIT,C4,STAND_1994,Female character named Rae Flowers,ST-006,draft
+Q060,Is Rae Flowers male or female in the 1994 miniseries?,EXPLICIT,C4,STAND_1994,Female character named Rae Flowers,ST-006,verified
+Q061,What is the gender of the character named Rae Flowers in the miniseries adaptation?,IMPLICIT,C4,STAND_1994,Female character named Rae Flowers,ST-006,verified
 Q062,What gender is Rae Flowers?,AMBIGUOUS,C4,,"STAND_NOVEL_1978: Male character named Ray Flowers; STAND_1994: Female character named Rae Flowers",ST-006,draft
-Q063,Does Nick Andros appear as a ghost in the 1978 novel?,EXPLICIT,C1,STAND_NOVEL_1978,Appears as a ghost to guide Tom to injured Stu,ST-007,draft
-Q064,How does Nick help Tom find Stu after Nick's death in the original story?,IMPLICIT,C1,STAND_NOVEL_1978,Appears as a ghost to guide Tom to injured Stu,ST-007,draft
+Q063,Does Nick Andros appear as a ghost in the 1978 novel?,EXPLICIT,C1,STAND_NOVEL_1978,Appears as a ghost to guide Tom to injured Stu,ST-007,verified
+Q064,How does Nick help Tom find Stu after Nick's death in the original story?,IMPLICIT,C1,STAND_NOVEL_1978,Appears as a ghost to guide Tom to injured Stu,ST-007,verified
 Q065,Does Nick Andros appear after his death to guide Tom?,AMBIGUOUS,C1,,"STAND_NOVEL_1978: Appears as a ghost to guide Tom to injured Stu; STAND_2020: Omitted; Tom finds Stu on his own",ST-007,draft
 Q066,Does Nick Andros appear as a ghost in the 2020 adaptation?,EXPLICIT,C1,STAND_2020,Omitted; Tom finds Stu on his own,ST-008,draft
 Q067,How does Tom find Stu in the version where Nick does not return after death?,IMPLICIT,C1,STAND_2020,Omitted; Tom finds Stu on his own,ST-008,draft
-Q068,How does the ending of The Stand work in the 1978 novel?,EXPLICIT,C5,STAND_NOVEL_1978,Ambiguous; ends without a clear moral,ST-009,draft
-Q069,How does the story end when there is no clear moral resolution?,IMPLICIT,C5,STAND_NOVEL_1978,Ambiguous; ends without a clear moral,ST-009,draft
+Q068,How does the ending of The Stand work in the 1978 novel?,EXPLICIT,C5,STAND_NOVEL_1978,Ambiguous; ends without a clear moral,ST-009,verified
+Q069,How does the story end when there is no clear moral resolution?,IMPLICIT,C5,STAND_NOVEL_1978,Ambiguous; ends without a clear moral,ST-009,verified
 Q070,What happens at the end of The Stand?,AMBIGUOUS,C5,,"STAND_NOVEL_1978: Ambiguous; ends without a clear moral; STAND_2020: New coda written by Stephen King; circular ending",ST-009,draft
-Q071,What happens in the ending of the 2020 adaptation of The Stand?,EXPLICIT,C5,STAND_2020,New coda written by Stephen King; circular ending,ST-010,draft
-Q072,How does the ending change when a new Stephen King-written coda creates a circular ending?,IMPLICIT,C5,STAND_2020,New coda written by Stephen King; circular ending,ST-010,draft
-Q073,What happens to Susan Norton in the novel?,EXPLICIT,C5,SALEMS_LOT_NOVEL,Becomes a vampire; destroyed by Ben,SL-005,draft
-Q074,What happens to Susan when she becomes a vampire and Ben destroys her?,IMPLICIT,C5,SALEMS_LOT_NOVEL,Becomes a vampire; destroyed by Ben,SL-005,draft
+Q071,What happens in the ending of the 2020 adaptation of The Stand?,EXPLICIT,C5,STAND_2020,New coda written by Stephen King; circular ending,ST-010,verified
+Q072,How does the ending change when a new Stephen King-written coda creates a circular ending?,IMPLICIT,C5,STAND_2020,New coda written by Stephen King; circular ending,ST-010,verified
+Q073,What happens to Susan Norton in the novel?,EXPLICIT,C5,SALEMS_LOT_NOVEL,Becomes a vampire; destroyed by Ben,SL-005,verified
+Q074,What happens to Susan when she becomes a vampire and Ben destroys her?,IMPLICIT,C5,SALEMS_LOT_NOVEL,Becomes a vampire; destroyed by Ben,SL-005,verified
 Q075,What is Susan Norton's fate?,AMBIGUOUS,C5,,"SALEMS_LOT_NOVEL: Becomes a vampire; destroyed by Ben; SALEMS_LOT_2004: Not destroyed by Ben; he intends to save her",SL-005,draft
-Q076,What happens to Father Callahan in the 2004 adaptation?,EXPLICIT,C5,SALEMS_LOT_2004,Survives; attacked by Ben in Detroit shelter,SL-006,draft
-Q077,What happens to Callahan after Ben encounters him in a Detroit shelter?,IMPLICIT,C5,SALEMS_LOT_2004,Survives; attacked by Ben in Detroit shelter,SL-006,draft
+Q076,What happens to Father Callahan in the 2004 adaptation?,EXPLICIT,C5,SALEMS_LOT_2004,Survives; attacked by Ben in Detroit shelter,SL-006,verified
+Q077,What happens to Callahan after Ben encounters him in a Detroit shelter?,IMPLICIT,C5,SALEMS_LOT_2004,Survives; attacked by Ben in Detroit shelter,SL-006,verified
 Q078,What is Father Callahan's fate?,AMBIGUOUS,C5,,SALEMS_LOT_2004: Survives; attacked by Ben in Detroit shelter,SL-006,draft
-Q079,Does the novel include an epilogue about Ben and Mark?,EXPLICIT,C5,SALEMS_LOT_NOVEL,Includes epilogue with Ben and Mark returning a year later,SL-007,draft
-Q080,What happens when Ben and Mark return to Salem's Lot a year later?,IMPLICIT,C5,SALEMS_LOT_NOVEL,Includes epilogue with Ben and Mark returning a year later,SL-007,draft
+Q079,Does the novel include an epilogue about Ben and Mark?,EXPLICIT,C5,SALEMS_LOT_NOVEL,Includes epilogue with Ben and Mark returning a year later,SL-007,verified
+Q080,What happens when Ben and Mark return to Salem's Lot a year later?,IMPLICIT,C5,SALEMS_LOT_NOVEL,Includes epilogue with Ben and Mark returning a year later,SL-007,verified
 Q081,What does the story's epilogue say about Ben and Mark?,AMBIGUOUS,C5,,SALEMS_LOT_NOVEL: Includes epilogue with Ben and Mark returning a year later,SL-007,draft
-Q082,Where does the final confrontation with Barlow take place in the novel?,EXPLICIT,C1,SALEMS_LOT_NOVEL,Basement of Eva Miller's boarding house,SL-008,draft
-Q083,Where does Ben confront Barlow when the final battle takes place beneath Eva Miller's boarding house?,IMPLICIT,C1,SALEMS_LOT_NOVEL,Basement of Eva Miller's boarding house,SL-008,draft
+Q082,Where does the final confrontation with Barlow take place in the novel?,EXPLICIT,C1,SALEMS_LOT_NOVEL,Basement of Eva Miller's boarding house,SL-008,verified
+Q083,Where does Ben confront Barlow when the final battle takes place beneath Eva Miller's boarding house?,IMPLICIT,C1,SALEMS_LOT_NOVEL,Basement of Eva Miller's boarding house,SL-008,verified
 Q084,Where does the final confrontation with Barlow take place?,AMBIGUOUS,C1,,"SALEMS_LOT_NOVEL: Basement of Eva Miller's boarding house; SALEMS_LOT_1979: Cellar of the Marsten House",SL-008,draft
-Q085,Where does the final confrontation with Barlow take place in the 1979 miniseries?,EXPLICIT,C1,SALEMS_LOT_1979,Cellar of the Marsten House,SL-009,draft
-Q086,Where does Ben face Barlow when the confrontation occurs in the Marsten House cellar?,IMPLICIT,C1,SALEMS_LOT_1979,Cellar of the Marsten House,SL-009,draft
+Q085,Where does the final confrontation with Barlow take place in the 1979 miniseries?,EXPLICIT,C1,SALEMS_LOT_1979,Cellar of the Marsten House,SL-009,verified
+Q086,Where does Ben face Barlow when the confrontation occurs in the Marsten House cellar?,IMPLICIT,C1,SALEMS_LOT_1979,Cellar of the Marsten House,SL-009,verified
 Q087,What happens to Susan Norton in the 2004 adaptation?,EXPLICIT,C5,SALEMS_LOT_2004,Not destroyed by Ben; he intends to save her,SL-010,draft
 Q088,What happens to Susan when Ben intends to save her rather than destroy her?,IMPLICIT,C5,SALEMS_LOT_2004,Not destroyed by Ben; he intends to save her,SL-010,draft
-Q089,What is Richard Straker's full name in the novel?,EXPLICIT,C4,SALEMS_LOT_NOVEL,Richard Throckett Straker,SL-011,draft
-Q090,What is the full name of Straker when his middle name is Throckett?,IMPLICIT,C4,SALEMS_LOT_NOVEL,Richard Throckett Straker,SL-011,draft
+Q089,What is Richard Straker's full name in the novel?,EXPLICIT,C4,SALEMS_LOT_NOVEL,Richard Throckett Straker,SL-011,verified
+Q090,What is the full name of Straker when his middle name is Throckett?,IMPLICIT,C4,SALEMS_LOT_NOVEL,Richard Throckett Straker,SL-011,verified
 Q091,What is Richard Straker's full name?,AMBIGUOUS,C4,,"SALEMS_LOT_NOVEL: Richard Throckett Straker; SALEMS_LOT_2004: Richard Thomas Straker",SL-011,draft
-Q092,What is Richard Straker's full name in the 2004 adaptation?,EXPLICIT,C4,SALEMS_LOT_2004,Richard Thomas Straker,SL-012,draft
-Q093,What is Straker's full name when his middle name is Thomas?,IMPLICIT,C4,SALEMS_LOT_2004,Richard Thomas Straker,SL-012,draft
+Q092,What is Richard Straker's full name in the 2004 adaptation?,EXPLICIT,C4,SALEMS_LOT_2004,Richard Thomas Straker,SL-012,verified
+Q093,What is Straker's full name when his middle name is Thomas?,IMPLICIT,C4,SALEMS_LOT_2004,Richard Thomas Straker,SL-012,verified
 Q094,Does Barlow speak in the novel?,EXPLICIT,C4,SALEMS_LOT_NOVEL,Barlow speaks,SL-013,draft
 Q095,Can Barlow speak in the version where the vampire has dialogue?,IMPLICIT,C4,SALEMS_LOT_NOVEL,Barlow speaks,SL-013,draft
 Q096,Does Kurt Barlow speak?,AMBIGUOUS,C4,,"SALEMS_LOT_NOVEL: Barlow speaks; SALEMS_LOT_1979: Barlow does not speak",SL-013,draft
-Q097,Does Barlow speak in the 1979 miniseries?,EXPLICIT,C4,SALEMS_LOT_1979,Barlow does not speak,SL-014,draft
-Q098,How does Barlow communicate in the version where he has no dialogue?,IMPLICIT,C4,SALEMS_LOT_1979,Barlow does not speak,SL-014,draft
-Q099,What is Straker's status relative to Barlow in the novel?,EXPLICIT,C4,SALEMS_LOT_NOVEL,Subordinate familiar; dies before Barlow,SL-015,draft
-Q100,How is Straker positioned when he serves as Barlow's subordinate familiar and dies before him?,IMPLICIT,C4,SALEMS_LOT_NOVEL,Subordinate familiar; dies before Barlow,SL-015,draft
+Q097,Does Barlow speak in the 1979 miniseries?,EXPLICIT,C4,SALEMS_LOT_1979,Barlow does not speak,SL-014,verified
+Q098,How does Barlow communicate in the version where he has no dialogue?,IMPLICIT,C4,SALEMS_LOT_1979,Barlow does not speak,SL-014,verified
+Q099,What is Straker's status relative to Barlow in the novel?,EXPLICIT,C4,SALEMS_LOT_NOVEL,Subordinate familiar; dies before Barlow,SL-015,verified
+Q100,How is Straker positioned when he serves as Barlow's subordinate familiar and dies before him?,IMPLICIT,C4,SALEMS_LOT_NOVEL,Subordinate familiar; dies before Barlow,SL-015,verified
 Q101,What is Straker's role relative to Barlow?,AMBIGUOUS,C4,,"SALEMS_LOT_NOVEL: Subordinate familiar; dies before Barlow; SALEMS_LOT_1979: Main antagonist; survives until the climax",SL-015,draft
 Q102,What is Straker's status relative to Barlow in the 1979 miniseries?,EXPLICIT,C4,SALEMS_LOT_1979,Main antagonist; survives until the climax,SL-016,draft
 Q103,How is Straker portrayed when he remains a major antagonist until the climax?,IMPLICIT,C4,SALEMS_LOT_1979,Main antagonist; survives until the climax,SL-016,draft
-Q104,What role does Father Callahan play in the novel?,EXPLICIT,C4,SALEMS_LOT_NOVEL,Major character; themes of faith and good vs. evil,SL-017,draft
-Q105,How is Callahan portrayed when his role centers on faith and the struggle between good and evil?,IMPLICIT,C4,SALEMS_LOT_NOVEL,Major character; themes of faith and good vs. evil,SL-017,draft
+Q104,What role does Father Callahan play in the novel?,EXPLICIT,C4,SALEMS_LOT_NOVEL,Major character; themes of faith and good vs. evil,SL-017,verified
+Q105,How is Callahan portrayed when his role centers on faith and the struggle between good and evil?,IMPLICIT,C4,SALEMS_LOT_NOVEL,Major character; themes of faith and good vs. evil,SL-017,verified
 Q106,How important is Father Callahan to the story?,AMBIGUOUS,C4,,"SALEMS_LOT_NOVEL: Major character; themes of faith and good vs. evil; SALEMS_LOT_1979: Severely reduced minor character",SL-017,draft
 Q107,What role does Father Callahan play in the 1979 miniseries?,EXPLICIT,C4,SALEMS_LOT_1979,Severely reduced minor character,SL-018,draft
 Q108,How is Callahan portrayed when his role is reduced to a minor part?,IMPLICIT,C4,SALEMS_LOT_1979,Severely reduced minor character,SL-018,draft
