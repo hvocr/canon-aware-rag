@@ -12,7 +12,7 @@ DB_DIR = Path("data/chroma_db")
 COLLECTION = "canon_chunks"
 EMBED_MODEL = "BAAI/bge-small-en-v1.5"
 RERANK_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
-GROQ_MODEL ="openai/gpt-oss-120b"
+GROQ_MODEL = "openai/gpt-oss-120b"
 
 _embed = None
 _rerank = None
