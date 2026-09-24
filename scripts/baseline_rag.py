@@ -75,7 +75,7 @@ def generate(query, contexts):
         model=GROQ_MODEL,
         messages=[{"role": "user", "content": prompt}],
         temperature=0.0,
-        max_tokens=300,
+        max_tokens=1500,
     )
     ans = resp.choices[0].message.content.strip()
     if not ans or len(ans) < 5:
