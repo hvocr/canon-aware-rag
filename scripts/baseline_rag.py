@@ -77,7 +77,10 @@ def generate(query, contexts):
         temperature=0.0,
         max_tokens=300,
     )
-    return resp.choices[0].message.content.strip()
+    ans = resp.choices[0].message.content.strip()
+    if not ans or len(ans) < 5:
+        ans = "[EMPTY_RESPONSE]"
+    return ans
 
 
 def answer(query, k_retrieve=20, k_rerank=5):
