@@ -3,10 +3,9 @@ import json
 import sys
 import time
 from pathlib import Path
-from variant_a import answer
 
 sys.path.insert(0, str(Path(__file__).parent))
-from baseline_rag import answer
+from variant_a import answer
 
 QUERIES = Path("data/queries.csv")
 OUT = Path("data/results_variant_a.jsonl")
@@ -20,7 +19,7 @@ with OUT.open("w", encoding="utf-8") as out:
     for i, row in enumerate(rows, 1):
         qid = row["query_id"]
         text = row["query_text"]
-        print(f"[{i}/{len(rows)}] {qid} ({row['query_type']}): {text[:70]}")
+        print(f"[{i}/{len(rows)}] {qid} ({row['query_type']}): {text[:60]}")
         try:
             result = answer(text)
             record = {
@@ -30,6 +29,7 @@ with OUT.open("w", encoding="utf-8") as out:
                 "conflict_type": row["conflict_type"],
                 "branch_expected": row["branch_expected"],
                 "ground_truth": row["ground_truth"],
+                "detected_branch": result["detected_branch"],
                 "answer": result["answer"],
                 "retrieved_branches": [c["branch"] for c in result["reranked"]],
                 "retrieved_chunk_ids": [c["chunk_id"] for c in result["reranked"]],
