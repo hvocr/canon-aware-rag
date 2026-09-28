@@ -70,6 +70,8 @@ def score(results, name):
 
 baseline = load(BASELINE)
 variant_a = load(VARIANT_A)
+variant_a2 = load(Path("data/results_variant_a2.jsonl"))
 
 score(baseline, "BASELINE")
-score(variant_a, "VARIANT A")
+score(variant_a, "VARIANT A (keyword)")
+score(variant_a2, "VARIANT A2 (LLM)")
