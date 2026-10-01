@@ -7,6 +7,7 @@ QUERIES = Path("data/queries.csv")
 BASELINE = Path("data/results_baseline.jsonl")
 VARIANT_A = Path("data/results_variant_a.jsonl")
 VARIANT_A2 = Path("data/results_variant_a2.jsonl")
+VARIANT_C2 = Path("data/results_variant_c2.jsonl")
 
 with QUERIES.open(encoding="utf-8") as f:
     queries = {r["query_id"]: r for r in csv.DictReader(f)}
@@ -106,3 +107,4 @@ def score(results, name):
 score(load(BASELINE), "BASELINE")
 score(load(VARIANT_A), "VARIANT A (keyword)")
 score(load(VARIANT_A2), "VARIANT A2 (LLM)")
+score(load(VARIANT_C2), "VARIANT C2 (per-branch retrieval)")
