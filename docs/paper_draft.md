@@ -308,11 +308,93 @@ Retrieval contamination. Chunks labeled for one branch often describe another, p
 
 ## 7. Threats to Validity
 
-Internal validity. Ground truths for EXPLICIT and IMPLICIT queries were programmatically verified against the corpus, but per-branch sample sizes are small for some branches (2 to 7 queries). Aggregate metrics are dominated by the branches with the most queries (SHINING_NOVEL, SHINING_KUBRICK, SALEMS_LOT_NOVEL). Inter-annotator agreement was computed on 30 queries; a larger sample would refine estimates.
+## 7. Threats to Validity
 
-External validity. We evaluate on three Stephen King works only. Whether the findings transfer to other franchises (Marvel, Star Wars, Sherlock Holmes) or to non-fiction parallel-source domains (legal, medical, historical) is a hypothesis, not a demonstrated result. The corpus is small relative to production RAG systems.
+### 7.1 Internal validity
 
-Construct validity. Retrieval precision measures whether retrieved chunks come from the expected branch, but does not measure whether they contain the answer. A chunk from the correct branch may not contain the relevant fact, and a chunk from the wrong branch may. The dominance-bias finding and the retrieval-contamination finding are both consequences of this limitation.
+The reported retrieval precision measures whether retrieved chunks come
+from the expected branch. It does not measure whether those chunks
+contain the answer. A chunk from the correct branch may not contain the
+relevant fact (Case 3 in §5.7), and a chunk from the wrong branch may.
+This is a structural limitation of the metric and affects every variant
+equally.
+
+Per-branch sample sizes are uneven. Some branches (SHINING_KUBRICK,
+SHINING_NOVEL, SALEMS_LOT_NOVEL) are represented by 15 to 16 queries
+each; others (STAND_1994, SHINING_1997) by only 2. Aggregate metrics are
+dominated by the larger branches, and per-branch deltas for small
+branches should be treated as preliminary.
+
+Inter-annotator agreement was computed on 30 queries stratified across
+three query types. The disagreements we observed (κ = 0.85, three
+disagreements out of 30) all fell on the IMPLICIT/AMBIGUOUS boundary.
+Expanding the annotation sample would reduce the confidence intervals
+on the classification reliability estimate but would not be expected to
+change the direction of the results.
+
+The generator is non-deterministic at the token level. Groq's API does
+not guarantee reproducibility even at temperature 0.0, and we observed
+occasional spurious citation markers and one full hallucination (Case 2
+in §5.7). Repeated runs at the same query would produce slightly
+different answers. We did not run repeated trials; the reported results
+are from a single run per variant.
+
+### 7.2 External validity
+
+We evaluate on three Stephen King works. All three have well-known
+adaptations, active fan communities, and substantial secondary
+literature. Whether the findings transfer to franchises with different
+adaptation structures (comic-first, radio, animated) or to works with
+no public wiki is a hypothesis, not a demonstrated result.
+
+Whether the findings transfer to non-fiction parallel-source domains
+(legal jurisdictions, medical guidelines, historical disputes) is also
+a hypothesis. These domains share the structural property of parallel
+valid sources, but they differ in two important ways: sources are often
+hierarchically ordered (by jurisdiction or recency), and users may not
+know which source is authoritative. Fiction canon is a clean test case
+precisely because no universal hierarchy exists and users are expected
+to know which version they want.
+
+The corpus is small (436 chunks) relative to production RAG systems
+(often 10⁵ to 10⁸ documents). Retrieval behavior at scale may differ.
+The dominance-bias finding (§5.6) is likely to amplify at scale: with
+larger corpora, the branches with the most content would dominate more
+severely, and branch-aware retrieval would matter more, not less.
+
+### 7.3 Construct validity
+
+"Canon branch" is an operational definition. We assign each chunk a
+single branch label based on its source file, but chunks often describe
+multiple versions (comparison articles) or contrast one branch against
+another. Our definition excludes chunks from a branch's retrieval pool
+even when they contain that branch's facts. This affects all variants
+and is the root cause of the Case 3 failure.
+
+The conflict taxonomy (C1–C5) is manual and may not capture all
+dimensions of canon conflict. We designed it to be exhaustive for our
+seed fact table, but a different taxonomy might classify the same
+conflicts differently or reveal categories we did not identify.
+
+The query type taxonomy (EXPLICIT, IMPLICIT, AMBIGUOUS, CONTROL) was
+validated by inter-annotator agreement of κ = 0.85. The remaining
+disagreement concentrates on the IMPLICIT/AMBIGUOUS boundary, suggesting
+that these two categories may not be fully separable in practice. We
+report the boundary disagreements in §4.4 and treat them as a limit on
+the granularity of the classification.
+
+### 7.4 Conclusion validity
+
+The main comparisons — Vanilla vs. B2 on EXPLICIT, B2 vs. B3 on
+AMBIGUOUS — are based on N = 41 and N = 24 respectively. The effect
+sizes (Δ = 0.52 and Δ = 7/24) are large relative to sampling noise, but
+we do not report confidence intervals. A larger evaluation set would
+allow us to claim significance more precisely.
+
+The IMPLICIT comparison between B2 (0.54) and B3 (0.41) is based on
+N = 38 and represents a difference of approximately 5 queries. This
+should be treated as suggestive rather than confirmatory. We report it
+as a trade-off, not as a headline result.
 
 ## 8. Reproducibility and Ethics
 
