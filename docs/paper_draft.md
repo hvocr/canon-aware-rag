@@ -201,15 +201,88 @@ This per-branch analysis is essential for interpreting the aggregate metrics. Th
 
 Branches with fewer than 20 chunks (STAND_NOVEL_1990, STAND_2020, SALEMS_LOT_2004, SHINING_1997) are represented by only 2 to 7 queries each; per-branch estimates for these branches should be treated as preliminary.
 
-### 5.7 Qualitative examples
+### 5.7 Case Studies
 
-Example 1: Silent resolution (Vanilla). Query Q019: "How does Jack Torrance die?" Vanilla retrieved mixed branches and answered with the novel's boiler explosion as fact, without acknowledging the Kubrick film's freezing death. B3 answered with both versions in a structured list.
+We trace five queries across the vanilla baseline and the branch-aware
+variants to illustrate the failure modes and the improvements the
+variants introduce.
 
-Example 2: Hallucination (Vanilla). Query Q074: "What happens to Father Callahan in the 2004 adaptation?" Vanilla answered that the character was played by James Cromwell. The 2004 miniseries cast James Gallery. This hallucination is not attributable to retrieval — the correct chunk was retrieved — and reflects instability in the generator.
+**Case 1: Silent resolution on an ambiguous query (Q019).**
 
-Example 3: Retrieval contamination (B2). Query Q017: "How does Jack Torrance die in the novel of The Shining?" B2 correctly classified the query as SHINING_NOVEL but retrieved a chunk from the Kubrick wiki page that describes the novel's ending as a contrast. The chunk was not labeled SHINING_NOVEL and was excluded by filtering. Branch filtering can exclude chunks that contain the correct answer.
+Query: "How does Jack Torrance die?" (AMBIGUOUS)
 
-Example 4: Structured per-branch answer (B3). Query Q005: "Does Dick Hallorann survive The Shining?" B3 returned a three-bullet answer distinguishing SHINING_NOVEL (survives), SHINING_KUBRICK (dies), and SHINING_1997 (survives). The same query under Vanilla produced a confused single-version answer.
+Vanilla retrieved mixed branches and answered with the novel's boiler
+explosion as fact, without acknowledging the Kubrick film's freezing
+death. This is failure mode F3 (silent resolution). B3 answered with
+both versions in a structured list.
+
+**Case 2: Fabrication independent of retrieval (Q074).**
+
+Query: "What happens to Father Callahan in the 2004 adaptation?"
+(EXPLICIT, expected branch SALEMS_LOT_2004)
+
+Vanilla answered that the character was played by James Cromwell. The
+2004 miniseries cast James Gallery. The correct chunk was retrieved, but
+the generator substituted a plausible-sounding actor name. This is
+failure mode F5 (fabrication), and it is not attributable to retrieval.
+Branch-aware retrieval does not eliminate this class of error; it
+eliminates only cross-branch hallucination.
+
+**Case 3: Retrieval contamination despite correct classification (Q017).**
+
+Query: "How does Jack Torrance die in the novel of The Shining?"
+(EXPLICIT, expected branch SHINING_NOVEL)
+
+B2 correctly classified the query as SHINING_NOVEL, but the chunk that
+states the novel's ending — "the boiler explodes, destroying the
+Overlook and killing Jack" — is located on a Kubrick wiki page that
+describes the film's divergence from the novel. That chunk is labeled
+SHINING_KUBRICK and was excluded by the branch filter. The answer omits
+the correct fact. This case illustrates a limitation of metadata-only
+branch filtering: chunks labeled with one branch may contain the facts
+of another. Retrieval precision is high, but answer quality is degraded.
+
+**Case 4: Per-branch dilution on an implicit query (Q086).**
+
+Query: "What happens to Susan when Ben intends to save her rather than
+destroy her?" (IMPLICIT, expected branch SALEMS_LOT_2004)
+
+The query describes a distinctive 2004 plot event without naming it.
+Under B2, the classifier returned SALEMS_LOT_2004 and retrieval was
+filtered accordingly. Under B3, the same classifier returned NONE,
+triggering the per-branch fallback; top-3 chunks from every branch
+diluted the SALEMS_LOT_2004 results, and the answer no longer isolates
+the 2004-specific outcome. This case illustrates the explicit/implicit
+trade-off quantified in §5.5.
+
+**Case 5: Full variant trace on a single query (Q005).**
+
+Query: "Does Dick Hallorann survive The Shining?" (AMBIGUOUS)
+Ground truth: Hallorann survives in the novel and the 1997 miniseries;
+he dies in the 1980 Kubrick film.
+
+*Vanilla.* Top-5 retrieval returned three SHINING_KUBRICK chunks, two
+SHINING_NOVEL chunks, and no SHINING_1997 chunks. The answer reported
+that Hallorann survives, citing only novel context and never mentioning
+that the Kubrick film diverges. This is failure mode F3.
+
+*B2 (Classifier).* The classifier returned SHINING_KUBRICK. Retrieval
+was filtered to that branch and all five chunks came from the film
+corpus. The answer reported that Hallorann is killed by Jack, without
+acknowledging any other version. The classifier over-committed on an
+ambiguous query, and the answer became *less* correct than vanilla's.
+
+*B3 (Classifier + Per-Branch).* The classifier again returned NONE,
+triggering per-branch retrieval: three chunks from each of the eleven
+branches were retrieved, then reranked to top-10. The generator produced
+a structured answer listing SHINING_NOVEL (survives), SHINING_KUBRICK
+(dies), and SHINING_1997 (survives). The conflict is surfaced rather
+than resolved.
+
+This trace illustrates the complete story of the paper in one query: the
+same input that Vanilla silently resolves and B2 over-commits on is
+handled correctly by B3 because the ambiguous case is treated as a
+distinct retrieval task rather than a fallback.
 
 ## 6. Error Analysis
 
