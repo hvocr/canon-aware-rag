@@ -13,6 +13,7 @@ GROQ_MODEL = "openai/gpt-oss-120b"
 
 VARIANTS = {
     "vanilla": "data/results_baseline.jsonl",
+    "b1": "data/results_variant_a.jsonl",
     "b2": "data/results_variant_a2.jsonl",
     "b3": "data/results_variant_c2.jsonl",
     "retrieval_only": "data/results_ablation_retrieval_only.jsonl",
