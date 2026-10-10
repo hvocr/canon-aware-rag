@@ -4,6 +4,7 @@ from pathlib import Path
 
 VARIANTS = {
     "vanilla": "data/answer_scores_vanilla.jsonl",
+    "b1": "data/answer_scores_b1.jsonl",
     "b2": "data/answer_scores_b2.jsonl",
     "b3": "data/answer_scores_b3.jsonl",
     "retrieval_only": "data/answer_scores_retrieval_only.jsonl",
