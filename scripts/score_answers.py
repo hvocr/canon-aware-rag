@@ -18,6 +18,7 @@ VARIANTS = {
     "b3": "data/results_variant_c2.jsonl",
     "retrieval_only": "data/results_ablation_retrieval_only.jsonl",
     "prompt_only": "data/results_ablation_prompt_only.jsonl",
+    "control": "data/results_control.jsonl",
 }
 
 with open("data/queries.csv", encoding="utf-8") as f:

@@ -9,6 +9,7 @@ VARIANTS = {
     "b3": "data/answer_scores_b3.jsonl",
     "retrieval_only": "data/answer_scores_retrieval_only.jsonl",
     "prompt_only": "data/answer_scores_prompt_only.jsonl",
+    "control": "data/answer_scores_control.jsonl",
 }
 
 
