@@ -1,0 +1,492 @@
+
+==============================================================================
+Q001 | Branch: SHINING_NOVEL
+QUERY: Does Dick Hallorann survive in the novel The Shining?
+GROUND TRUTH: Yes — he survives and helps Danny and Wendy escape
+
+  [results_baseline    ] Yes. In Stephen King’s novel *The Shining*, Dick Hallorann survives Jack’s assault and later goes on to work at a resort in Maine. (See context [4] “However in the novel, Dick survived Jack's chaos and moved on to work at a resort in Maine.”)
+  [results_variant_a   ] Yes. According to the provided information, Dick Hallorann does not die in The Shining itself; he lives on and only dies later—on January 19, 1999—decades after the events of The Shining. [4]
+  [results_variant_a2  ] The provided context does not state that Dick Hallorann dies in *The Shining*; it only notes that he “later attempted to rescue the Torrance family after Jack Torrance became possessed by the hotel.” Therefore, based on the given information, his survival or death in that novel is not specified.
+  [results_variant_c2  ] The provided context does not state whether Dick Hallorann lives or dies in the novel *The Shining*; it only notes that he “attempted to rescue the Torrance family after Jack Torrance became possessed by the hotel.” No explicit information about his survival in that book is given.
+  [results_ablation_ret] Yes. In the original novel *The Shining* Dick Hallorann is still alive—he is rescued later in the story and only dies many years afterward (on January 19, 1999, as noted in the sequel *Doctor Sleep*).
+  [results_ablation_pro] Based on the information given, Dick Hallorann does not die in the events of **The Shining** itself; his death is recorded later (January 19 1999). Therefore, he survives the novel *The Shining*.
+
+==============================================================================
+Q002 | Branch: SHINING_KUBRICK
+QUERY: Does Dick Hallorann die in the Kubrick film?
+GROUND TRUTH: Yes — Jack kills him with an axe
+
+  [results_baseline    ] Yes. In Stanley Kubrick’s film version, Jack Torrance kills Dick Hallorann.
+  [results_variant_a   ] Yes. In the Kubrick film Jack Torrance kills Dick Hallorann.
+  [results_variant_a2  ] Yes. In Stanley Kubrick’s film version, Jack kills Dick Hallorann.
+  [results_variant_c2  ] Yes. In Stanley Kubrick’s film version, Jack Torrance kills Dick Hallorann.
+  [results_ablation_ret] Yes. In Stanley Kubrick’s film version, Jack Torrance kills Dick Hallorann.
+  [results_ablation_pro] Yes. In Stanley Kubrick’s film version, Jack Torrance kills Dick Hallorann.
+
+==============================================================================
+Q006 | Branch: SHINING_NOVEL
+QUERY: What room number does Dick Hallorann warn Danny to avoid in the novel?
+GROUND TRUTH: Room 217
+
+  [results_baseline    ] Dick Hallorann warns Danny to avoid **Room 217** in the novel.
+  [results_variant_a   ] The warning differs between the excerpts. In the passage that describes the novel itself (excerpt [4]), Dick Hallorann tells Danny to stay out of **Room 237**. (Other excerpts mention Room 217, but the novel‑specific excerpt gives Room 237.)
+  [results_variant_a2  ] In Stephen King’s novel **The Shining**, Dick Hallorann tells Danny to stay out of **Room 237**. (Some of the other summaries in the provided excerpts mistakenly give the number as 217, but the novel itself specifies Room 237.)
+  [results_variant_c2  ] The warning differs between the excerpts:  * In the passages labeled **[1]** and **[2]**, Dick Hallorann tells Danny to stay out of **Room 217**.   * In the passage labeled **[4]**, Dick warns Danny to stay out of **Room 237**.  So, if the question refers to the version of the story presented in exc
+  [results_ablation_ret] Dick Hallorann tells Danny to stay away from a specific hotel room, but the exact number given differs in the excerpts:  * In several passages (e.g., [1] and [2]) Hallorann warns Danny not to enter **Room 217**.   * In another passage ( [4] ) he warns Danny to stay out of **Room 237**.  So, dependin
+  [results_ablation_pro] Dick Hallorann warns Danny to stay out of **Room 237**.
+
+==============================================================================
+Q007 | Branch: SHINING_KUBRICK
+QUERY: What room number is haunted in the Kubrick film?
+GROUND TRUTH: Room 237
+
+  [results_baseline    ] The haunted room in Kubrick’s film is **Room 237**.
+  [results_variant_a   ] The haunted room in Kubrick’s film is **Room 237**.
+  [results_variant_a2  ] The haunted room in Kubrick’s film is **Room 237**.
+  [results_variant_c2  ] The haunted room in Kubrick’s film is **Room 237**.
+  [results_ablation_ret] The haunted room in Kubrick’s film is **Room 237**.
+  [results_ablation_pro] The haunted room in Kubrick’s film is **Room 237**.
+
+==============================================================================
+Q009 | Branch: SALEMS_LOT_NOVEL
+QUERY: What type of vampire is Kurt Barlow in the novel?
+GROUND TRUTH: A Type-One Vampire
+
+  [results_baseline    ] Kurt Barlow is a **Type One** vampire in Stephen King’s novel.
+  [results_variant_a   ] The provided context does not contain any information about Kurt Barlow or the type of vampire he is in the novel.
+  [results_variant_a2  ] Kurt Barlow is a **Type One** vampire.
+  [results_variant_c2  ] Kurt Barlow is a **Type One vampire** in the novel.
+  [results_ablation_ret] Kurt Barlow is a **Type‑One vampire**.
+  [results_ablation_pro] Kurt Barlow is a **Type One vampire** in the novel.
+
+==============================================================================
+Q010 | Branch: SALEMS_LOT_1979
+QUERY: How is Kurt Barlow depicted in the 1979 miniseries?
+GROUND TRUTH: A Nosferatu-like monstrous vampire who does not speak
+
+  [results_baseline    ] In the 1979 television miniseries Kurt Barlow is shown not as a suave, human‑looking vampire but as a grotesque, Nosferatu‑type monster. He is a disfigured, “mutant‑like” creature whose teeth grow out so wildly he cannot close his mouth, he never speaks (only growls and snarls), and he possesses ove
+  [results_variant_a   ] The provided context contains information only about the 1997 miniseries adaptation of The Shining and does not mention Kurt Barlow or any 1979 miniseries. Therefore, the depiction of Kurt Barlow in the 1979 miniseries cannot be answered from the given material.
+  [results_variant_a2  ] In the 1979 television miniseries Kurt Barlow is no longer the cultured, human‑looking vampire of Stephen King’s novel.  He is presented as a grotesque, Nosferatu‑style creature – a speechless, demonic‑looking monster with a horribly disfigured, mutant‑like face.  The change was made by producer Ric
+  [results_variant_c2  ] In the 1979 television miniseries Kurt Barlow is no longer the cultured, human‑looking vampire of Stephen King’s novel.  Producer Richard Kobritz had the character re‑imagined as a **speechless, demonic‑looking monster with a Nosferatu‑style, grotesquely disfigured appearance** (played by Reggie Nal
+  [results_ablation_ret] In the 1979 television miniseries Kurt Barlow is no longer the cultured, human‑looking vampire of Stephen King’s novel.  He is presented as a grotesque, Nosferatu‑style creature – a speechless, demonic‑looking monster with a horribly disfigured, mutant‑like face.  The role was performed by actor Reg
+  [results_ablation_pro] In the 1979 television miniseries Kurt Barlow is no longer the cultured, human‑looking vampire of Stephen King’s novel.  He is presented as a grotesque, Nosferatu‑style creature – a speechless, demonic‑looking monster with a horribly disfigured, mutant‑like face whose teeth grow out so wildly he can
+
+==============================================================================
+Q011 | Branch: SALEMS_LOT_2004
+QUERY: How is Barlow portrayed in the 2004 miniseries?
+GROUND TRUTH: A sophisticated well-dressed older gentleman
+
+  [results_baseline    ] In the 2004 miniseries, Kurt Barlow (played by Rutger Hauer) is depicted as a sophisticated, well‑dressed older gentleman whose dress and mannerisms seem mildly anachronistic. Rather than the Nosferatu‑type monster of the 1979 version, this Barlow resembles the more romantic, Dracula‑like vampire of
+  [results_variant_a   ] The provided context does not contain any information about a character named Barlow or about a 2004 miniseries, so I cannot answer how Barlow is portrayed in that production.
+  [results_variant_a2  ] In the 2004 miniseries Barlow (played by Rutger Hauer) is depicted as a sophisticated, well‑dressed older gentleman whose slightly anachronistic clothing and mannerisms set him apart from the townspeople. Rather than the Nosferatu‑type monster of the 1979 version, he resembles the more romantic, Cou
+  [results_variant_c2  ] In the 2004 miniseries Barlow (played by Rutger Hauer) is depicted as a sophisticated, well‑dressed older gentleman whose slightly anachronistic clothing and mannerisms set him apart from the townspeople. Rather than the Nosferatu‑type monster of the 1979 version, he resembles the more romantic, Cou
+  [results_ablation_ret] In the 2004 miniseries Barlow (played by Rutger Hauer) is depicted as a sophisticated, well‑dressed older gentleman whose slightly anachronistic clothing and mannerisms set him apart from the townspeople. Rather than the Nosferatu‑type monster of the 1979 version, he resembles the more romantic, Cou
+  [results_ablation_pro] In the 2004 miniseries Barlow (played by Rutger Hauer) is depicted as a sophisticated, well‑dressed older gentleman whose slightly anachronistic clothing and mannerisms set him apart from the townspeople. Rather than the Nosferatu‑type monster of the 1979 version, he resembles the more romantic, Cou
+
+==============================================================================
+Q017 | Branch: SHINING_NOVEL
+QUERY: How does Jack Torrance die in the novel of The Shining?
+GROUND TRUTH: Dies when the Overlook's boiler explodes
+
+  [results_baseline    ] The provided context does not include any description of how Jack Torrance dies in Stephen King’s novel *The Shining*.
+  [results_variant_a   ] Jack Torrance dies when the Overlook Hotel’s boiler explodes, destroying the hotel and killing him.
+  [results_variant_a2  ] Jack Torrance dies when the Overlook Hotel’s boiler explodes, destroying the hotel and killing him.
+  [results_variant_c2  ] In Stephen King’s novel *The Shining*, Jack Torrance is killed when the hotel’s boiler explodes, destroying the Overlook Hotel and ending his life.
+  [results_ablation_ret] Jack Torrance dies when the Overlook Hotel’s boiler explodes, destroying the hotel and killing him.
+  [results_ablation_pro] In Stephen King’s novel *The Shining*, Jack Torrance is killed when the hotel’s boiler explodes, destroying the Overlook Hotel and ending his life.
+
+==============================================================================
+Q020 | Branch: SHINING_KUBRICK
+QUERY: How does Jack Torrance die in Kubrick's adaptation?
+GROUND TRUTH: Freezes to death in the hedge maze
+
+  [results_baseline    ] The provided context does not specify how Jack Torrance dies in Stanley Kubrick’s 1980 film adaptation of The Shining.
+  [results_variant_a   ] In Kubrick’s film Jack meets his end in the hedge‑maze. After chasing Wendy and Danny into the labyrinth, he becomes lost and freezes to death there, his body later being discovered by the rangers.【4†L1-L4】
+  [results_variant_a2  ] In Kubrick’s film Jack meets his end in the hedge‑maze. After chasing Wendy and Danny into the labyrinth, he becomes lost and freezes to death there, his body later being discovered by the rangers.【4†L1-L4】
+  [results_variant_c2  ] In Kubrick’s film Jack meets his end in the hedge‑maze. After chasing Wendy and Danny through the labyrinth, he becomes lost and succumbs to the cold – he freezes to death in the maze.【4†L1-L4】
+  [results_ablation_ret] In Kubrick’s film Jack meets his end in the hedge‑maze. After chasing Wendy and Danny into the labyrinth, he becomes lost and freezes to death there, his body later being discovered by the rangers.【4†L1-L4】
+  [results_ablation_pro] In Kubrick’s film Jack meets his end in the hedge‑maze. After chasing Wendy and Danny into the labyrinth, he becomes lost and freezes to death there, his body later being discovered by the rangers.【4†L1-L4】
+
+==============================================================================
+Q022 | Branch: SHINING_1997
+QUERY: How does Jack Torrance die in the 1997 miniseries?
+GROUND TRUTH: Dies when the hotel explodes
+
+  [results_baseline    ] The provided context does not specify how Jack Torrance dies in the 1997 miniseries.
+  [results_variant_a   ] In the 1997 miniseries, Jack Torrance dies by causing a massive steam‑boiler explosion that destroys the Overlook Hotel. He triggers the explosion, which levels the building and kills him.
+  [results_variant_a2  ] In the 1997 miniseries, Jack Torrance dies by causing a massive steam‑boiler explosion that destroys the Overlook Hotel. He triggers the explosion, which levels the building and kills him.
+  [results_variant_c2  ] In the 1997 miniseries, Jack Torrance dies by causing a massive steam‑boiler explosion. He triggers the explosion, which destroys the Overlook Hotel and kills him.
+  [results_ablation_ret] In the 1997 miniseries, Jack Torrance dies by causing a massive steam‑boiler explosion that destroys the Overlook Hotel. He triggers the explosion, which levels the building and kills him.
+  [results_ablation_pro] In the 1997 miniseries, Jack Torrance dies by causing a massive steam‑boiler explosion that destroys the Overlook Hotel. He triggers the explosion, which levels the building and kills him.
+
+==============================================================================
+Q024 | Branch: SHINING_NOVEL
+QUERY: How is Jack Torrance characterized in the novel?
+GROUND TRUTH: Tragic figure; struggles with alcoholism and love for family
+
+  [results_baseline    ] In Stephen King’s novel, Jack Torrance is portrayed as a **loving but deeply troubled father** whose sobriety reveals a caring side, but whose alcoholism and temper make him volatile and dangerous. He is a **diagnosed sociopath** who “lacks guilt and remorse but yet still had some empathy left in hi
+  [results_variant_a   ] Jack Torrance is portrayed as a deeply troubled but still‑loving father who is trying to rebuild his life after a history of alcoholism and violent outbursts. In the novel he is:  * **A recovering alcoholic with anger issues** – his drinking and temper previously led him to break his son Danny’s arm
+  [results_variant_a2  ] In the novel Jack Torrance is portrayed as a deeply troubled, yet still‑loving, father and husband whose flaws dominate his character. He is an aspiring writer and former literature teacher who has lost his job because of alcoholism and a violent temper. He is a recovering alcoholic who has previous
+  [results_variant_c2  ] In the novel Jack Torrance is portrayed as a deeply conflicted, recovering alcoholic who is both a loving father when sober and a volatile, temperamental man when drunk. He is an aspiring writer and former literature teacher who lost his job after assaulting a student and breaking his son’s arm. Tho
+  [results_ablation_ret] In the novel Jack Torrance is portrayed as a **loving but deeply troubled father** who is **sober‑dependent** and **temperamental**. He is a **recovering alcoholic** with a violent temper that previously caused him to break his son Danny’s arm and assault a student, leading to the loss of his teachi
+  [results_ablation_pro] In the novel Jack Torrance is portrayed as a **loving but deeply troubled father** who is **sober‑only when he can be affectionate** toward his wife Wendy and son Danny. He is a **recovering alcoholic with a violent temper** who has lost his teaching job after assaulting a student and breaking his s
+
+==============================================================================
+Q027 | Branch: SHINING_KUBRICK
+QUERY: How is Jack Torrance characterized in Kubrick's film?
+GROUND TRUTH: Menacing figure; descent into madness is colder and more ambiguous
+
+  [results_baseline    ] In Kubrick’s version, Jack Torrance is presented from the outset as an abusive, menacing and hostile alcoholic who is borderline‑psychotic.  He is portrayed as misogynistic, selfish, brutal and violent – a predatory father figure whose behavior epitomises domestic‑violence and the collapse of mascul
+  [results_variant_a   ] In Kubrick’s version Jack Torrance is presented from the start as a violent, abusive, and almost‑psychotic alcoholic.  He is a misogynistic, selfish, brutal husband and father who threatens his family at every turn, embodying a predatory, patriarchal figure whose “writer’s‑block” is replaced by a mu
+  [results_variant_a2  ] In Kubrick’s version, Jack Torrance is presented from the outset as an abusive, menacing and hostile alcoholic who is borderline‑psychotic.  He is portrayed as misogynistic, selfish, brutal and violent – a predatory father figure whose behavior epitomises domestic‑violence and the collapse of mascul
+  [results_variant_c2  ] In Kubrick’s version Jack Torrance is portrayed as an abusive, menacing and almost‑psychotic alcoholic.  He is a misogynistic, selfish, brutal and violent husband‑father who walks on eggshells around his wife, injures his son’s arms without remorse, and becomes a predatory, tyrannical patriarch—a fi
+  [results_ablation_ret] In Kubrick’s version, Jack Torrance is presented from the start as a violent, abusive, and almost psychotic alcoholic.  He is described as “misogynistic, selfish, brutal and violent,” a husband and father who makes his wife “walk on eggshells” and even injures his son’s arms without remorse【1】.  Cri
+  [results_ablation_pro] In Kubrick’s version Jack Torrance is not the conflicted, redeemable man of Stephen King’s novel but a fully‑fledged, abusive, menacing figure.  He is presented from the start as a hostile, borderline‑psychotic alcoholic “wretch” who is misogynistic, selfish, brutal and violent (he even injures his 
+
+==============================================================================
+Q029 | Branch: SHINING_NOVEL
+QUERY: Are the Grady daughters sisters but not twins in the novel?
+GROUND TRUTH: Sisters but not twins
+
+  [results_baseline    ] Yes. In the novel (and the original script) the Grady daughters are described as sisters, but they are not twins.【1†L1-L3】
+  [results_variant_a   ] No. In the novel the Grady girls are presented as twins—not merely sisters who happen not to be twins.
+  [results_variant_a2  ] No. In the novel the girls in Room 237 are described as “the twin girls who were murdered by their father,” indicating that they are both sisters **and** twins.
+  [results_variant_c2  ] No. In the novel the Grady girls are presented as twins—not merely sisters.
+  [results_ablation_ret] No. In the novel the Grady daughters are described as twin girls — they are both sisters and twins.
+  [results_ablation_pro] No. In the novel the Grady girls are described as “the twin girls” who were murdered by their father, indicating that they are twins—not just sisters who happen to be different ages.
+
+==============================================================================
+Q032 | Branch: SHINING_KUBRICK
+QUERY: Are the Grady daughters twins in Kubrick's film?
+GROUND TRUTH: Identical twins
+
+  [results_baseline    ] No. In Kubrick’s film the Grady girls are presented as sisters (Ullman even says they’re “about eight and ten”), not twins. The two roles were played by identical‑twin actresses, and many viewers refer to them as “the Grady twins,” but the characters themselves are not twins.
+  [results_variant_a   ] No. In Kubrick’s film the Grady girls are presented as sisters (Ullman even says they’re “about eight and ten”), not twins. The two roles were played by identical‑twin actresses, and many viewers refer to them as “the Grady twins,” but the characters themselves are not twins.
+  [results_variant_a2  ] No. In Kubrick’s The Shining the Grady girls are presented as sisters (Ullman even says they’re “about eight and ten”), not twins. The two roles were played by identical‑twin actresses, and many viewers refer to them as “the Grady twins,” but the characters themselves are not twins in the film.
+  [results_variant_c2  ] No. In Kubrick’s film the Grady girls are presented as sisters (Ullman even says they’re “about eight and ten”), not twins. The two roles were played by identical‑twin actresses, and many viewers refer to them as “the Grady twins,” but the characters themselves are not twins.
+  [results_ablation_ret] No. In Kubrick’s film the Grady girls are presented as sisters (Ullman even says they’re “about eight and ten”), not twins. The two roles were played by identical‑twin actresses, and many viewers refer to them as “the Grady twins,” but the characters themselves are not twins.
+  [results_ablation_pro] No. In Kubrick’s film the Grady girls are presented as sisters (Ullman even says they’re “about eight and ten”), not twins. The two actresses who play them happen to be identical twins, and many viewers refer to them as “the Grady twins,” but the characters themselves are not twins.
+
+==============================================================================
+Q034 | Branch: SHINING_NOVEL
+QUERY: How is Wendy Torrance characterized in the novel?
+GROUND TRUTH: Strong and independent woman
+
+  [results_baseline    ] In Stephen King’s novel **The Shining**, Wendy Torrance is portrayed as a beautiful, blonde, stay‑at‑home housewife whose marriage to Jack is “extremely rocky.”  At the start she is “miserable, depressed” and feels trapped in her role, but
+  [results_variant_a   ] In Stephen King’s novel **The Shining**, Wendy Torrance is portrayed as a beautiful, blonde, stay‑at‑home housewife whose marriage to Jack is extremely rocky.  She is described as miserable and depressed, nervous at first, and initially sees the Overlook Hotel as a blessing, but quickly becomes frig
+  [results_variant_a2  ] In Stephen King’s novel **The Shining**, Wendy Torrance is portrayed as a beautiful, blonde, stay‑at‑home housewife who is deeply unhappy and depressed. Her marriage to Jack is extremely strained, and she is described as “miserable” and “rocky.”    At first the Overlook Hotel seems like a blessing a
+  [results_variant_c2  ] In Stephen King’s novel **Wendy Torrance** is portrayed as a beautiful, blonde, stay‑at‑home housewife whose marriage to Jack is deeply troubled.  She is initially nervous and depressed, feeling “miserable” and “rocky” in her relationship, but as Jack’s mental state deteriorates she becomes frighten
+  [results_ablation_ret] In Stephen King’s novel **The Shining**, Wendy Torrance is portrayed as a **miserable, depressed, stay‑at‑home housewife** whose marriage to Jack is extremely rocky. She is described as **blonde and very beautiful**, drawing the attention of hotel guests when the Torrances first arrive.    At first 
+  [results_ablation_pro] In Stephen King’s novel **Wendy Torrance** is portrayed as a beautiful, blonde, stay‑at‑home housewife whose marriage to Jack is extremely rocky.  She is initially nervous but hopeful when the family arrives at the Overlook, yet she is also miserable and depressed, feeling trapped in a “miserable, d
+
+==============================================================================
+Q037 | Branch: SHINING_KUBRICK
+QUERY: How is Wendy Torrance characterized in Kubrick's film?
+GROUND TRUTH: Meek submissive vulnerable woman
+
+  [results_baseline    ] In Kubrick’s version, Wendy is portrayed as a far weaker, more vulnerable figure than in the novel – essentially a “scream‑queen” who is less capable and more dependent, rather than the strong, independent woman Stephen King wrote.
+  [results_variant_a   ] In Kubrick’s version Wendy is not the strong, self‑sufficient mother of King’s novel.  The film presents her as a far more vulnerable, frightened figure – “less capable and more vulnerable,” often reduced to screaming and seeming “stupid” in the eyes of the author【2†L1-L4】【1†L1-L3】.
+  [results_variant_a2  ] In Kubrick’s version Wendy is not the strong, self‑sufficient mother of King’s novel.  The film presents her as a far more vulnerable, passive figure – “basically just there to scream and be stupid” – who is less capable and more dependent, often appearing frightened and helpless rather than indepen
+  [results_variant_c2  ] In Kubrick’s version Wendy is not the strong, self‑sufficient mother of King’s novel.  The film presents her as a far more vulnerable, frightened figure – “less capable and more vulnerable,” often reduced to screaming and seeming “stupid” in the eyes of the author【2†L1-L4】.  This portrayal contrasts
+  [results_ablation_ret] In Kubrick’s version Wendy is not the strong, independent mother of King’s novel.  The film presents her as far more vulnerable and passive – “less capable and more vulnerable,” essentially a figure who “is basically just there to scream and be stupid.” 【2†L1-L4】【1†L1-L3】
+  [results_ablation_pro] In Kubrick’s version Wendy is not the strong, self‑sufficient mother of King’s novel.  The film presents her as a far more vulnerable, frightened figure – “basically just there to scream and be stupid” – who appears less capable and more dependent than the book’s Wendy.  (See [2] and [1].)
+
+==============================================================================
+Q039 | Branch: SHINING_NOVEL
+QUERY: Does Jack Torrance regain his sanity before dying in the novel?
+GROUND TRUTH: Recovers sanity via Danny's intervention before dying
+
+  [results_baseline    ] Yes. In Stephen King’s novel, Jack Torrance regains his sanity and goodwill—thanks to Danny’s intervention—before he sacrifices himself to let Wendy and Danny escape, dying when the hotel’s boiler explodes.
+  [results_variant_a   ] Yes. According to the novel’s description, Jack’s sanity does return – but only “too late,” just before he is trapped in the boiler room and the hotel explodes, where he dies.【5】
+  [results_variant_a2  ] Yes. In the novel, Jack’s sanity does return, but only at the very end—“Jack’s sanity returned too late, leaving him trapped in the hotel boiler room when it explodes. He dies…”【5†L1-L4】.
+  [results_variant_c2  ] Yes. According to the novel’s description, Jack’s sanity does return—but only at the very end, “too late,” just before he is trapped in the boiler room and the hotel explodes. (See context [5].)
+  [results_ablation_ret] Yes. In the novel, Jack’s sanity does return, but only at the very end—“Jack’s sanity returned too late, leaving him trapped in the hotel boiler room when it explodes. He dies…”【5†L1-L4】.
+  [results_ablation_pro] Yes. In the novel Jack’s sanity does return, but it comes back “too late.” He regains his sanity just before he is trapped in the boiler room, which then explodes and kills him.
+
+==============================================================================
+Q042 | Branch: SHINING_KUBRICK
+QUERY: Does Jack Torrance receive redemption in Kubrick's film?
+GROUND TRUTH: No redemption; dies mad in the maze
+
+  [results_baseline    ] No. In Kubrick’s version Jack Torrance never redeems himself; he is portrayed from the start as an abusive, hostile alcoholic who descends into violence without remorse, unlike the novel’s Jack who eventually finds redemption.【1†L1-L4】
+  [results_variant_a   ] No. In Kubrick’s version Jack Torrance never redeems himself; he is presented from the start as an abusive, hostile, borderline‑psychotic alcoholic who descends into violence and never experiences the redemption his novel counterpart eventually attains【1†L1-L4】.
+  [results_variant_a2  ] No. In Kubrick’s version Jack Torrance never redeems himself; he is presented from the start as an abusive, hostile alcoholic who descends into madness and is never shown to recover or be forgiven. 【1†L1-L4】
+  [results_variant_c2  ] No. In Kubrick’s version Jack Torrance never redeems himself; he is presented from the start as an abusive, hostile alcoholic who descends into madness and is never shown to recover or be forgiven. 【1†L1-L4】
+  [results_ablation_ret] No. In Kubrick’s version Jack Torrance never redeems himself; he is presented from the start as an abusive, hostile alcoholic who descends into madness and is never shown to recover or be forgiven. 【1†L1-L4】
+  [results_ablation_pro] No. In Kubrick’s version Jack Torrance never redeems himself; he is portrayed from the start as an abusive, hostile alcoholic who descends into madness and is never shown to recover or be forgiven. 【1†L1-L4】
+
+==============================================================================
+Q044 | Branch: SHINING_NOVEL
+QUERY: What is the source of the Overlook's evil in the novel?
+GROUND TRUTH: Hotel absorbs evil from past events that occurred there
+
+  [results_baseline    ] In the novel, the Overlook Hotel’s evil comes from the building itself — it has absorbed the many murders, suicides, gang‑land hits and other horrific events that occurred there over the years, turning the place into a vaguely sentient
+  [results_variant_a   ] In the novel, the Overlook’s malevolence comes from the evil spirits that haunt the hotel—its dark, murderous history and the ghosts (such as former caretaker Delbert Grady) that reside there. These spirits possess and manipulate Jack, driving him toward violence.
+  [results_variant_a2  ] In the novel, the Overlook’s malevolence comes from the evil spirits that haunt it—its resident ghosts (e.g., the former caretaker Delbert Grady) that possess and manipulate Jack Torrance. These spirits are the source of the hotel’s evil.
+  [results_variant_c2  ] In the novel, the Overlook’s malevolence comes from the evil spirits that haunt the hotel—its dark, murderous history and the ghosts (such as former caretaker Delbert Grady) that reside there. These spirits possess and manipulate Jack, driving him toward violence.
+  [results_ablation_ret] In the novel, the Overlook’s malevolence comes from the evil spirits that haunt the hotel—its dark, murderous history and the ghosts (such as former caretaker Delbert Grady) that possess the building and work on Jack’s weaknesses. These resident spirits are the source of the hotel’s evil.
+  [results_ablation_pro] In the novel, the Overlook’s malevolence comes from the evil spirits / ghosts that inhabit the hotel. These resident spirits (e.g., the ghost of former caretaker Delbert Grady) possess and manipulate Jack, driving him to violence.
+
+==============================================================================
+Q047 | Branch: SHINING_KUBRICK
+QUERY: What is the source of the Overlook's evil in Kubrick's film?
+GROUND TRUTH: Built on a Native American burial ground
+
+  [results_baseline    ] In Kubrick’s version, the Overlook’s malevolence is suggested to stem from the fact that the hotel was built on a Native American burial ground.
+  [results_variant_a   ] In Kubrick’s version the horror does not spring from a truly supernatural “evil” residing in the hotel itself. According to Stephen King, Kubrick “looked…for evil in the characters and made the film into a domestic tragedy with only vaguely supernatural overtones” – meaning the source of the Overloo
+  [results_variant_a2  ] According to Stephen King’s criticism of Kubrick’s version, the film locates the Overlook’s evil not in the hotel itself but in the characters—especially Jack—so the source of the horror is the human evil they bring, rather than an intrinsic supernatural force of the building.
+  [results_variant_c2  ] In Kubrick’s version, the Overlook’s evil isn’t an intrinsic, supernatural force of the hotel itself; it is generated by the characters—especially Jack Torrance—who bring “evil” into the story. As Stephen King noted, Kubrick “looked…for evil in the characters and made the film into a domestic traged
+  [results_ablation_ret] According to Stephen King’s criticism of Kubrick’s version, the film does not present the Overlook Hotel itself as an independent source of evil. Instead, Kubrick “looked … for evil in the characters and made the film into a domestic tragedy with only vaguely supernatural overtones” – meaning the ho
+  [results_ablation_pro] According to Stephen King, Kubrick’s version of *The Shining* locates the source of the Overlook’s evil in the characters—especially Jack—rather than in the hotel itself. King says Kubrick “looked, instead, for evil in the characters and made the film into a domestic tragedy with only vaguely supern
+
+==============================================================================
+Q049 | Branch: STAND_NOVEL_1990
+QUERY: What is expanded about Trashcan Man's backstory in the 1990 novel?
+GROUND TRUTH: Expanded; longer journey with The Kid
+
+  [results_baseline    ] The novel expands his origin story – it tells how Donald Merwin Elbert (the Trashcan Man) was born in Powtanville, Indiana as the youngest child of Wendell and Sally Elbert, and how his father’s violent breakdown led to a bar‑room shooting, the murder of the three older children, an attempt to kill 
+  [results_variant_a   ] The provided context does not contain any information about Trashcan Man or his backstory in the 1990 novel, so I cannot answer the question based on the given material.
+  [results_variant_a2  ] The provided excerpts do not contain any information about an expansion of Trashcan Man’s backstory in the 1990 novel.
+  [results_variant_c2  ] The provided excerpts do not contain any information about an expansion of Trashcan Man’s backstory in the 1990 novel.
+  [results_ablation_ret] The provided excerpts do not contain any information about an expansion of Trashcan Man’s backstory in the 1990 novel.
+  [results_ablation_pro] The provided excerpts do not contain any information about an expansion of Trashcan Man’s backstory in the 1990 novel.
+
+==============================================================================
+Q052 | Branch: STAND_NOVEL_1990
+QUERY: What time period is The Stand set in in the 1990 novel?
+GROUND TRUTH: 1990s
+
+  [results_baseline    ] The 1990 “Complete & Uncut” edition moves the story’s setting forward ten years – it is set in **1990** rather than the original 1980 timeframe.【1†L4-L6】【3†L5-L7】
+  [results_variant_a   ] The provided context does not contain any information about the time period in which The Stand (1990 novel) is set.
+  [results_variant_a2  ] The 1990 uncut edition of The Stand is set **in the future** – King updated the story with 1980s‑ and 1990s‑era cultural references because the novel’s events take place after the time of its original publication.【1†L4-L7】
+  [results_variant_c2  ] The 1990 uncut edition of **The Stand** is set in the future – the story takes place after the 1990s, with King adding popular‑culture references from the 1980s and 1990s to reflect its forward‑looking setting.【1†L4-L7】
+  [results_ablation_ret] The 1990 uncut edition of **The Stand** is set in the future – the story takes place after the 1980s and includes popular‑culture references from the 1980s and 1990s.
+  [results_ablation_pro] The 1990 uncut edition of **The Stand** is set in the future – the story takes place after the 1980s and includes popular‑culture references from the 1980s and 1990s.
+
+==============================================================================
+Q055 | Branch: STAND_2020
+QUERY: What time period is The Stand set in the 2020 adaptation?
+GROUND TRUTH: Contemporary
+
+  [results_baseline    ] The provided context does not specify the time period in which the 2020 adaptation of The Stand is set.
+  [results_variant_a   ] The provided context does not specify the time period in which the story of the 2020 adaptation of The Stand is set.
+  [results_variant_a2  ] The provided context does not specify the time period in which the 2020 adaptation of The Stand is set.
+  [results_variant_c2  ] The provided context does not specify the time period in which the 2020 adaptation of The Stand is set.
+  [results_ablation_ret] The provided context does not specify the time period in which the 2020 adaptation of The Stand is set.
+  [results_ablation_pro] The provided context does not specify the time period in which the 2020 adaptation of The Stand is set.
+
+==============================================================================
+Q057 | Branch: STAND_NOVEL_1978
+QUERY: Is Rae Flowers male or female in the 1978 novel?
+GROUND TRUTH: Male character named Ray Flowers
+
+  [results_baseline    ] The provided context only discusses Rae Flowers in relation to the 1994 miniseries—stating that the role was originally written as a man (Ray Flowers) and was changed to a woman when Kathy Bates was cast. It does not specify Rae Flowers
+  [results_variant_a   ] The provided context does not contain any information about a character named Rae Flowers, so I cannot determine whether Rae Flowers is male or female in the 1978 novel.
+  [results_variant_a2  ] The provided context does not contain any information about the character Rae Flowers, so it does not indicate whether Rae Flowers is male or female in the 1978 novel.
+  [results_variant_c2  ] The provided context does not contain any information about the character Rae Flowers, so it does not indicate whether Rae Flowers is male or female in the 1978 novel.
+  [results_ablation_ret] The provided context does not contain any information about Rae Flowers’ gender in the 1978 novel.
+  [results_ablation_pro] The provided context does not contain any information about a character named Rae Flowers, so it does not indicate whether Rae Flowers is male or female in the 1978 novel.
+
+==============================================================================
+Q060 | Branch: STAND_1994
+QUERY: Is Rae Flowers male or female in the 1994 miniseries?
+GROUND TRUTH: Female character named Rae Flowers
+
+  [results_baseline    ] In the 1994 miniseries, Rae Flowers is portrayed as a woman. (The role was rewritten from a man to a woman when Kathy Bates became available.)
+  [results_variant_a   ] The provided context does not contain any information about a character named Rae Flowers or about a 1994 miniseries, so I cannot determine whether Rae Flowers is male or female.
+  [results_variant_a2  ] Rae Flowers is female in the 1994 miniseries.
+  [results_variant_c2  ] Rae Flowers is female in the 1994 miniseries.
+  [results_ablation_ret] Rae Flowers is female in the 1994 miniseries.
+  [results_ablation_pro] In the 1994 miniseries, Rae Flowers is a female character. (The role was rewritten from a man to a woman when Kathy Bates became available.)
+
+==============================================================================
+Q063 | Branch: STAND_NOVEL_1978
+QUERY: Does Nick Andros appear as a ghost in the 1978 novel?
+GROUND TRUTH: Appears as a ghost to guide Tom to injured Stu
+
+  [results_baseline    ] Yes. In Stephen King’s 1978 novel *The Stand*, Nick Andros appears to Tom Cullen as a ghost, guiding him to the injured Stu.【2†L1-L3】
+  [results_variant_a   ] The provided context contains no information about Nick Andros or his appearance as a ghost in any 1978 novel, so based on this material we cannot say that he does.
+  [results_variant_a2  ] No. In the 1978 novel Nick Andros does not appear as a ghost; after his death he only shows up in Tom Cullen’s dreams, where he can speak and hear and offers him guidance.
+  [results_variant_c2  ] No. In the 1978 novel Nick Andros does not appear as a ghost; after his death he only shows up in Tom Cullen’s dreams, where he can speak and hear, but he is not presented as a ghostly apparition.
+  [results_ablation_ret] No. In the 1978 novel Nick Andros does not appear as a ghost; after his death he shows up only in Tom Cullen’s dreams, where he can speak and hear.
+  [results_ablation_pro] No. In the 1978 novel Nick Andros does not appear as a ghost; after his death he shows up only in Tom Cullen’s dreams, where he can speak and hear.
+
+==============================================================================
+Q066 | Branch: STAND_NOVEL_1978
+QUERY: How does the ending of The Stand work in the 1978 novel?
+GROUND TRUTH: Ambiguous; ends without a clear moral
+
+  [results_baseline    ] The provided excerpts do not describe how the 1978 novel’s ending works. They only discuss later revisions and the television miniseries’ epilogue (the
+  [results_variant_a   ] I’m sorry, but the provided context does not contain any information about the ending of The Stand in the 1978 novel.
+  [results_variant_a2  ] In the original 1978 edition of The Stand, the climax ends with Mother Abagail on her deathbed explaining that God permitted the bomb that had exploded at a Free‑Zone committee meeting—an explosion that killed Nick Andros, Chad Norris and Susan Stern. She tells the survivors that the bombing was all
+  [results_variant_c2  ] Based on the information provided, the 1978 edition of The Stand concludes with Mother Abagail on her deathbed explaining that God permitted the bombing that occurs during a Free‑Zone committee meeting. The bomb—added by King to prevent the heroes from becoming complacent—kills several key character
+  [results_ablation_ret] According to the information given, the original 1978 edition of **The Stand** ends with the climax that King added to resolve the story’s conflict:    * Harold and Nadine’s bomb explodes during a Free‑Zone committee meeting, killing several key characters – **Nick Andros, Chad Norris and Susan Ster
+  [results_ablation_pro] In the original 1978 edition of The Stand, the climax ends with the “Free‑Zone” bomb that Harold and Nadine build exploding during a committee meeting. The blast kills several of the core survivors—Nick Andros, Chad Norris and Susan Stern. After the bombing, Mother Abagail, who is dying, tells the r
+
+==============================================================================
+Q069 | Branch: STAND_2020
+QUERY: What happens in the ending of the 2020 adaptation of The Stand?
+GROUND TRUTH: New coda written by Stephen King; circular ending
+
+  [results_baseline    ] In the
+  [results_variant_a   ] The 2020 miniseries concludes with a new ending that was co‑written by Stephen King and his son Owen King. This finale incorporates the expanded ending that appeared in the 1990 version of the novel, making the series’ conclusion a third variation on the story’s ending. (No further plot details are 
+  [results_variant_a2  ] The 2020 miniseries concludes with a new ending that was co‑written by Stephen King and his son Owen King. This finale incorporates the expanded ending that appeared in the 1990 version of the novel, making the series’ conclusion the third variation of the story’s ending. (No further plot details ar
+  [results_variant_c2  ] The 2020 miniseries concludes with a brand‑new finale that was co‑written by Stephen King and his son Owen King. This ending incorporates the expanded conclusion that appeared in the 1990 version of the novel, making the series’ conclusion the third variation of the story’s ending. (No further plot 
+  [results_ablation_ret] The 2020 miniseries concludes with a new ending that was co‑written by Stephen King and his son Owen King. This finale incorporates the expanded ending that appeared in the 1990 version of the novel, making the series’ conclusion the third variation of the story’s ending. (No further plot details ar
+  [results_ablation_pro] The 2020 miniseries concludes with a brand‑new finale that was co‑written by Stephen King and his son Owen King. This ending incorporates the expanded conclusion that appeared in the 1990 version of the novel, making the series’ conclusion the third variation of the story’s ending. (No further plot 
+
+==============================================================================
+Q071 | Branch: SALEMS_LOT_NOVEL
+QUERY: What happens to Susan Norton in the novel?
+GROUND TRUTH: Becomes a vampire; destroyed by Ben
+
+  [results_baseline    ] In Stephen King’s novel **Salem’s Lot**, Susan Norton is a recent college graduate who befriends and falls in love with Ben Mears. When the town’s vampire menace is discovered, she joins Ben and the other townspeople in confronting the vampire Kurt Barlow at the Marsten House. While there she is cap
+  [results_variant_a   ] The provided excerpts do not mention a character named Susan Norton, so the information about what happens to her in the novel is not available in the given context.
+  [results_variant_a2  ] In Stephen King’s novel **Salem’s Lot**, Susan Norton is a recent college graduate who befriends and falls in love with Ben Mears. When the town’s vampire menace is uncovered, she joins Ben (and Mark Petrie) in confronting the vampire Kurt Barlow at the Marsten House. While there she is captured and
+  [results_variant_c2  ] - **In SALEMS_LOT_NOVEL**: Susan Norton is a recent college graduate who befriends and falls in love with Ben Mears. She helps investigate the vampire Kurt Barlow, is captured and turned into a vampire, and is ultimately destroyed when Ben drives a stake through her heart.    - **In SALEMS_LOT_2024*
+  [results_ablation_ret] In Stephen King’s novel *Salem’s Lot*, Susan Norton goes with Mark Petrie to the Marsten House to confront Kurt Barlow. She is captured there, is turned into a vampire, and is later killed when Ben Mears drives a stake through her heart.
+  [results_ablation_pro] - **In the novel (Stephen King’s *‘Salem’s Lot’*)**: Susan Norton, a recent college graduate who befriends and falls in love with Ben Mears, joins the effort to confront the vampire Kurt Barlow. While at the Marsten House she is captured and turned into a vampire. Later, Ben Mears finds her as a vam
+
+==============================================================================
+Q074 | Branch: SALEMS_LOT_2004
+QUERY: What happens to Father Callahan in the 2004 adaptation?
+GROUND TRUTH: Survives; attacked by Ben in Detroit shelter
+
+  [results_baseline    ] In the 2004 miniseries Father Callahan is played by James Cromwell.  The adaptation gives him a more prominent role that follows the novel, and the film opens with a scene that takes place after most of the story’s events – Ben Mears walks into a homeless shelter and finds Callahan there handing out
+  [results_variant_a   ] In the 2004 TNT miniseries Father Callahan confronts the vampire Kurt Barlow in an attempt to save Mark. His Christian faith is no match for Barlow, and he is forced to drink Barlow’s blood, which turns him into Barlow’s servant. Later, after Barlow is destroyed, Callahan assumes the role of the vam
+  [results_variant_a2  ] In the 2004 TNT miniseries, Father Callahan confronts the vampire Barlow in an attempt to save Mark. His faith is not enough to defeat Barlow, and he is forced to drink Barlow’s blood. This turns him into Barlow’s servant, and he later emerges as the new leader of the town’s vampires, swearing reven
+  [results_variant_c2  ] In the 2004 TNT miniseries Father Callahan confronts the vampire Kurt Barlow in an attempt to save Mark. His Christian faith is no match for Barlow, and he is forced to drink Barlow’s blood. That act turns him into Barlow’s servant – a vampire. Later, after Barlow is destroyed, Callahan assumes the 
+  [results_ablation_ret] In the 2004 TNT miniseries *Salem’s Lot*, Father Callahan is turned against his will. After Barlow attacks the Petrie house and kills Mark’s mother, Callahan tries to rescue Mark but his faith is no match for the vampire. He is forced to drink Barlow’s blood, which makes him a servant of the vampire
+  [results_ablation_pro] In the 2004 TNT miniseries Father Callahan confronts the vampire Kurt Barlow while trying to protect Mark Petrie, but his Christian faith is no match for the creature. Barlow forces Callahan to drink his own blood, turning the priest into a vampire servant. Later, after Barlow is destroyed, Callahan
+
+==============================================================================
+Q077 | Branch: SALEMS_LOT_NOVEL
+QUERY: Does the novel include an epilogue about Ben and Mark?
+GROUND TRUTH: Includes epilogue with Ben and Mark returning a year later
+
+  [results_baseline    ] Yes. The novel’s epilogue, “One for the Road,” takes place a year after the main events and follows Ben and Mark as they return to Jerusalem’s Lot to try to finish destroying the vampires.【1†L9-L13】【2†L9-L13】
+  [results_variant_a   ] No. The provided context describes the novel’s epilogue as focusing on Hallorann, Danny, and Wendy after the Overlook’s destruction, and makes no mention of an epilogue about characters named Ben and Mark.
+  [results_variant_a2  ] Yes. The novel’s epilogue, “One for the Road,” takes place a year later and follows Ben and Mark as they return to Jerusalem’s Lot to try to finish destroying the vampires.
+  [results_variant_c2  ] Yes. The novel has an epilogue (titled “One for the Road”) set a year later in which Ben and Mark return to Jerusalem’s Lot to try to finish destroying the vampires.
+  [results_ablation_ret] Yes. The novel’s epilogue, “One for the Road,” takes place a year after the main events and follows Ben and Mark as they return to Jerusalem’s Lot to try to finish destroying the vampires. 【1†L9-L13】【2†L9-L13】
+  [results_ablation_pro] Yes. The novel’s epilogue, “One for the Road,” takes place a year after the main events and follows Ben and Mark as they return to Jerusalem’s Lot to try to finish destroying the vampires.【1†L9-L13】【2†L9-L13】
+
+==============================================================================
+Q080 | Branch: SALEMS_LOT_NOVEL
+QUERY: Where does the final confrontation with Barlow take place in the novel?
+GROUND TRUTH: Basement of Eva Miller's boarding house
+
+  [results_baseline    ] The novel’s final showdown with Kurt Barlow occurs in the **basement of Eva Miller’s boarding house**.
+  [results_variant_a   ] The provided excerpts do not contain any information about where the final confrontation with Barlow occurs in the novel.
+  [results_variant_a2  ] The novel’s final showdown with Kurt Barlow occurs in the **basement of Eva Miller’s boarding house**.
+  [results_variant_c2  ] The final confrontation with Barlow occurs in the basement of Eva Miller’s boarding house.
+  [results_ablation_ret] The final confrontation with Barlow occurs in the **basement of Eva Miller’s boarding house**.
+  [results_ablation_pro] The novel’s final showdown with Kurt Barlow occurs in the **basement of Eva Miller’s boarding house**.
+
+==============================================================================
+Q083 | Branch: SALEMS_LOT_1979
+QUERY: Where does the final confrontation with Barlow take place in the 1979 miniseries?
+GROUND TRUTH: Cellar of the Marsten House
+
+  [results_baseline    ] The provided context does not specify where the final confrontation with Barlow occurs in the 1979 miniseries.
+  [results_variant_a   ] The provided context contains information only about the 1997 miniseries of The Shining and does not mention a 1979 miniseries, a character named Barlow, or any final confrontation involving him. Therefore, the location of that confrontation cannot be answered from the given material.
+  [results_variant_a2  ] In the 1979 miniseries, the climactic showdown with Kurt Barlow is staged in the **cellar of the Marsten House**【1†L1-L3】.
+  [results_variant_c2  ] In the 1979 miniseries, the final showdown with Kurt Barlow occurs in the **cellar (basement) of the Marsten House**.
+  [results_ablation_ret] In the 1979 miniseries, the final showdown with Kurt Barlow occurs in the **cellar (basement) of the Marsten House**.
+  [results_ablation_pro] In the 1979 miniseries, the climactic showdown with Kurt Barlow takes place in the cellar of the Marsten House.
+
+==============================================================================
+Q085 | Branch: SALEMS_LOT_2004
+QUERY: What happens to Susan Norton in the 2004 adaptation?
+GROUND TRUTH: Not destroyed by Ben; he intends to save her
+
+  [results_baseline    ] In the 2004 miniseries, Susan is bitten and turned into a vampire by Kurt Barlow, and Ben Mears is forced to end her life—he kills her by driving a stake through her heart.
+  [results_variant_a   ] In the 2004 TNT miniseries Susan Norton is turned into a vampire. She later tries to lure Ben to join her and, when she attacks Mark, Ben kills her – staking (or “steaking”) her to destroy her.
+  [results_variant_a2  ] In the 2004 TNT miniseries Susan Norton is turned into a vampire. She later tries to lure Ben to join her and, when she attacks Mark, Ben kills her – staking (or “steaking”) her to destroy her.
+  [results_variant_c2  ] In the 2004 miniseries Susan Norton is turned into a vampire. When she later tries to lure Ben and attacks Mark, Ben kills her – stabbing her with a stake (described as a “steak” in one summary) to destroy her.【3†L1-L4】【5†L1-L4】
+  [results_ablation_ret] In the 2004 TNT miniseries Susan Norton is turned into a vampire. Later, after she tries to tempt/ seduce Ben and attacks Mark, Ben kills her – staking (or “steaking”) her to destroy her.
+  [results_ablation_pro] In the 2004 TNT miniseries Susan Norton is turned into a vampire. When she later tries to lure Ben to join her and then attacks Mark, Ben kills her – staking (or “steaking”) her to destroy her.
+
+==============================================================================
+Q087 | Branch: SALEMS_LOT_NOVEL
+QUERY: What is Richard Straker's full name in the novel?
+GROUND TRUTH: Richard Throckett Straker
+
+  [results_baseline    ] Richard Straker’s full name in Stephen King’s novel *Salem’s Lot* is **Richard Throckett Straker**.【1†L1-L2】
+  [results_variant_a   ] The provided context does not contain any information about Richard Straker’s full name, so I cannot answer the question from the given material.
+  [results_variant_a2  ] Richard Throckett Straker.
+  [results_variant_c2  ] Richard Throckett Straker.
+  [results_ablation_ret] Richard Throckett Straker.【1†L1-L2】
+  [results_ablation_pro] Richard Throckett Straker.
+
+==============================================================================
+Q090 | Branch: SALEMS_LOT_2004
+QUERY: What is Richard Straker's full name in the 2004 adaptation?
+GROUND TRUTH: Richard Thomas Straker
+
+  [results_baseline    ] Richard Thomas Straker.
+  [results_variant_a   ] Richard Straker. The provided context only gives him the name “Richard Straker” and does not supply any additional middle name or surname.
+  [results_variant_a2  ] The context only gives him as **Richard Straker**; no additional middle name or surname is provided for his character in the 2004 adaptation.
+  [results_variant_c2  ] Richard Straker.
+  [results_ablation_ret] Richard Straker.【1†L…】【2†L…】【4†L…】【5†L…】
+  [results_ablation_pro] Richard Straker. The 2004 adaptation refers to him simply as “Richard Straker”; no additional name is given in the provided material.
+
+==============================================================================
+Q092 | Branch: SALEMS_LOT_NOVEL
+QUERY: Does Barlow speak in the novel?
+GROUND TRUTH: Barlow speaks
+
+  [results_baseline    ] Yes. In Stephen King’s novel *Salem’s Lot*, Kurt Barlow is described as speaking with “eloquence and erudition,” indicating that he does speak in the book.
+  [results_variant_a   ] Based on the provided excerpts, there is no mention of a character named Barlow, nor any indication that such a character speaks in the novel.
+  [results_variant_a2  ] Yes. In Stephen King’s novel **“Salem’s Lot,”** Kurt Barlow does speak. During the confrontation with Father Callahan he “challeng[es] him to throw away the cross,” indicating that Barlow is able to speak in the book.
+  [results_variant_c2  ] Yes. In Stephen King’s novel **Kurt Barlow does speak**. During the confrontation with Father Callahan, Barlow challenges the priest to throw away his crucifix and later forces Callahan to drink his blood, indicating that Barlow is able to speak and issue commands in the book. (See the description o
+  [results_ablation_ret] The provided context does not say whether Kurt Barlow speaks in Stephen King’s novel. It describes his actions and his relationship to Straker, but it gives no information about Barlow’s dialogue in the book.
+  [results_ablation_pro] Yes. In the novel Barlow does speak—he confronts Father Callahan, challenges him to throw away the crucifix, and otherwise interacts with the characters. (See the description of the scene where “Barlow… challenged him to throw away the cross.”)
+
+==============================================================================
+Q095 | Branch: SALEMS_LOT_1979
+QUERY: Does Barlow speak in the 1979 miniseries?
+GROUND TRUTH: Barlow does not speak
+
+  [results_baseline    ] No. In the 1979 miniseries Kurt Barlow never speaks; he only growls and snarls.
+  [results_variant_a   ] The provided context contains information only about the 1997 miniseries of The Shining and does not mention a character named Barlow or any 1979 miniseries. Therefore, based on the given material, there is no answer to whether Barlow speaks in a 1979 miniseries.
+  [results_variant_a2  ] No. In the 1979 miniseries Kurt Barlow is portrayed as a speechless, demonic‑looking monster who only growls or snarls rather than speaking. 【2†L1-L4】【4†L4-L6】
+  [results_variant_c2  ] No. In the 1979 miniseries Kurt Barlow is portrayed as a speech‑less, demonic monster who only growls or snarls rather than speaking. 【2†L1-L4】【4†L4-L7】
+  [results_ablation_ret] No. In the 1979 miniseries Kurt Barlow is portrayed as a speech‑less, demonic monster who only growls or snarls rather than speaking. 【2†L1-L4】【4†L4-L7】
+  [results_ablation_pro] No. In the 1979 miniseries Kurt Barlow is portrayed as a speech‑less, demonic monster who only growls or snarls rather than speaking. 【2†L1-L4】【4†L4-L7】
+
+==============================================================================
+Q097 | Branch: SALEMS_LOT_NOVEL
+QUERY: What is Straker's status relative to Barlow in the novel?
+GROUND TRUTH: Subordinate familiar; dies before Barlow
+
+  [results_baseline    ] In Stephen King’s original novel, Richard Throckett Straker is Kurt Barlow’s **human familiar (or thrall)**—the vampire’s servant who carries out all of Barlow’s business and bidding.
+  [results_variant_a   ] The provided context does not contain any information about a character named Straker or a character named Barlow, so their relationship or relative status cannot be determined from the given material.
+  [results_variant_a2  ] In Stephen King’s original novel, Richard Throckett Straker is Kurt Barlow’s **human familiar (or thrall)**—the secondary antagonist who acts as Barlow’s servant and carries out all of the vampire’s business affairs.
+  [results_variant_c2  ] - **In the novel**: Straker is Kurt Barlow’s “familiar” – a human thrall who serves as Barlow’s chief operative, handling all of the vampire’s business affairs and preparing the town for his master’s arrival.    - **In the 1979 mini‑series**: Straker is portrayed as the main antagonist and a more pr
+  [results_ablation_ret] The provided context does not contain any information about a character named Straker or a character named Barlow, nor does it describe any relationship or status between them. Therefore, based on the given material, I cannot answer the question.
+  [results_ablation_pro] - **In the novel**: Straker is Kurt Barlow’s “familiar” or human thrall, acting as Barlow’s servant and handling all of Barlow’s business affairs. (Only the novel version is referenced for this relationship.)
+
+==============================================================================
+Q100 | Branch: SALEMS_LOT_1979
+QUERY: What is Straker's status relative to Barlow in the 1979 miniseries?
+GROUND TRUTH: Main antagonist; survives until the climax
+
+  [results_baseline    ] In the 1979 miniseries, Straker serves as Barlow’s human familiar — but he is portrayed as the primary antagonist, a more prominent and dominant villain than Barlow himself.
+  [results_variant_a   ] The provided context does not contain any information about a character named Straker, a character named Barlow, or their relationship in a 1979 miniseries. Therefore, I cannot answer the question based on the given material.
+  [results_variant_a2  ] In the 1979 miniseries, Straker serves Kurt Barlow—he is Barlow’s henchman/servant (and is described as his business partner who prepares the town for Barlow’s arrival).
+  [results_variant_c2  ] In the 1979 miniseries, Straker serves Kurt Barlow—he is Barlow’s henchman/servant who prepares the town and offers sacrifices for his master.
+  [results_ablation_ret] In the 1979 miniseries, Straker serves Kurt Barlow—he is Barlow’s henchman/servant who is sent to prepare the town for his master’s arrival.
+  [results_ablation_pro] In the 1979 miniseries, Straker is portrayed as Kurt Barlow’s subordinate—he is Barlow’s servant (and business partner) who prepares the town for his master’s arrival.
+
+==============================================================================
+Q102 | Branch: SALEMS_LOT_NOVEL
+QUERY: What role does Father Callahan play in the novel?
+GROUND TRUTH: Major character; themes of faith and good vs. evil
+
+  [results_baseline    ] In Stephen King’s *Salem’s Lot* Father Callahan is the town’s Roman‑Catholic priest. He presides over Danny Glick’s funeral and, after Ben Mears discovers that a vampire is behind the disappearances, he is convinced of the danger and enlisted to help the group of survivors. He joins Ben, Susan, Matt
+  [results_variant_a   ] The provided context contains no information about a character named Father Callahan, so I cannot answer the question based on the given material.
+  [results_variant_a2  ] Father Callahan is the local Roman‑Catholic priest of the small Maine town of Jerusalem’s Lot. In the novel he presides over the funeral of the boy Danny Glick, is later convinced by Ben Mears, Susan Norton and the others that a vampire is terrorizing the town, and joins them in their fight. He help
+  [results_variant_c2  ] Father Callahan is the town’s Roman‑Catholic priest. In the novel he presides over the funeral of Danny Glick, is eventually convinced by Ben Mears and the others that a vampire is terrorizing Jerusalem’s Lot, and joins them in the fight. He leads a daytime assault on Kurt Barlow’s manor, but when h
+  [results_ablation_ret] Father Callahan is the local Roman‑Catholic priest of the small Maine town of Jerusalem’s Lot. In the novel he presides over the funeral of Danny Glick, is convinced by Ben Mears and the others to acknowledge the vampire threat, and joins them in their fight against Kurt Barlow. He leads a daytime a
+  [results_ablation_pro] Father Callahan is the town’s Roman‑Catholic priest. In the novel he presides over Danny Glick’s funeral, is recruited by Ben Mears and the others to help fight the vampire outbreak, and takes part in the daylight assault on Kurt Barlow’s manor. When he finally confronts Barlow, his faith falters; B
